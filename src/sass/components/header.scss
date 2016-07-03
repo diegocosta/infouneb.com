@@ -2,10 +2,11 @@
     background: #38184b url(../images/bg-inicio.jpg);
     background-size: cover;
     height: auto;
+    border:1px solid transparent;
 }
 
 .header--logo {
-
+    margin: 50px 0px;
 }
 
 .header--logo--link {

@@ -9,6 +9,7 @@
 @import "components/header";
 @import "components/inscreva";
 
-.columns {
-    overflow: hidden;
+.container.linha:before {
+    position: fixed;
+    width: 100%;
 }

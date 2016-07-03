@@ -1,3 +1,31 @@
 .navigation {
+    position: relative;
+}
+
+.navigation .networks,
+.navigation--pages {
     display: none;
+}
+
+.navigation--button {
+    width: 80px;
+    height: 80px;
+    background: rgba(232, 190, 16, 1);
+    border-radius: 10px;
+    transform: rotate(45deg);
+    position: fixed;
+    top: -50px;
+    right: 30px;
+}
+
+.navigation--button:before {
+    transform: rotate(-45deg);
+    display: block;
+    display: block;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 48px;
+    margin-bottom: 6px;
 }
