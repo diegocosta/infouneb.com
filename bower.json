@@ -1,0 +1,7 @@
+{
+  "name": "cabr",
+  "dependencies": {
+    "foundation-sites": "^6.2.1",
+    "normalize-css": "^4.1.1"
+  }
+}
