@@ -1,0 +1,74 @@
+.linha:before {
+  display: block;
+  content: "";
+  height: 5px;
+  background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
+
+.navigation {
+  display: none; }
+
+.header {
+  background: #38184b url(../images/bg-inicio.jpg);
+  background-size: cover;
+  height: auto; }
+
+.header--logo--link {
+  display: block;
+  background: url(../images/logo.png);
+  background-size: contain;
+  width: 70vw;
+  height: 35vw;
+  margin: auto; }
+
+.header--meta {
+  overflow: hidden;
+  margin: 40px 0px 0px; }
+
+.header--chamada, .header--chamada__direita {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  width: 90vw;
+  margin: 0px auto; }
+
+.inscreva {
+  background: #2e5286;
+  width: 70vw;
+  margin: 10px auto;
+  color: #fff;
+  overflow: hidden; }
+
+.inscreva.linha:before {
+  height: 2vw; }
+
+.inscreva--data {
+  padding: 9vw 2.8vw 5vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14.4vw;
+  line-height: 1; }
+  .inscreva--data span {
+    display: block;
+    font-size: 6.5vw; }
+
+.inscreva--button,
+.inscreva--button:focus {
+  background: #e6be1e;
+  display: block;
+  width: 80%;
+  margin: 0px auto 6vw;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2.4vw 0px;
+  font-size: 5vw;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 1.8vw; }
+
+.columns {
+  overflow: hidden; }

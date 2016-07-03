@@ -1,3 +1,14 @@
 
 @import 'variables';
 @import 'fonts';
+
+
+
+@import "components/linha";
+@import "components/navigation";
+@import "components/header";
+@import "components/inscreva";
+
+.columns {
+    overflow: hidden;
+}

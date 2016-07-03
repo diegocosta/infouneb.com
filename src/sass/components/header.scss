@@ -1,0 +1,37 @@
+.header {
+    background: #38184b url(../images/bg-inicio.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+.header--logo {
+
+}
+
+.header--logo--link {
+    display: block;
+    background: url(../images/logo.png);
+    background-size: contain;
+    width: 70vw;
+    height: 35vw;
+    margin: auto;
+}
+
+.header--meta {
+    overflow: hidden;
+    margin: 40px 0px 0px;
+}
+
+.header--chamada {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    width: 90vw;
+    margin: 0px auto;
+
+    &__direita {
+        @extend .header--chamada
+    }
+}
