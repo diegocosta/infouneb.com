@@ -1,9 +1,11 @@
 .inscreva {
-    background: #2e5286;
-    width: 70vw;
-    margin: 10px auto;
+    background: rgba(46, 82, 134, 0.85);
+    width: 80vw;
+    margin: 9.37vw auto 3.12vw;
     color: #fff;
     overflow: hidden;
+    margin-bottom: -12.5vw;
+    z-index:10;
 }
 
 .inscreva.linha:before {

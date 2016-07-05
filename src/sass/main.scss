@@ -1,5 +1,5 @@
 
-@import 'variables';
+
 @import 'fonts';
 
 
@@ -8,6 +8,7 @@
 @import "components/navigation";
 @import "components/header";
 @import "components/inscreva";
+@import "components/evento";
 
 .container.linha:before {
     position: fixed;

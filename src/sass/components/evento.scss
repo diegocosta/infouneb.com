@@ -1,0 +1,56 @@
+.sobre-o-evento {
+    background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat;
+    background-position: top right;
+    padding: 18.75vw 6.25vw 0;
+}
+
+.sobre-o-evento--chamada {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 5vw;
+    color: #222;
+    text-align: center;
+
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        background: url(../images/dots.png) no-repeat center center;
+        height:3.12vw;
+        margin-bottom: 3.12vw;
+    }
+}
+
+.sobre-o-evento--texto {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4.37vw;
+    color: #fff;
+}
+
+.sobre-o-evento--texto p {
+    display: none;
+}
+
+.sobre-o-evento--texto p:nth-child(1),
+.sobre-o-evento--texto p:nth-child(2) {
+    display: block;
+}
+
+
+.sobre-o-evento--button-continue,
+.sobre-o-evento--button-continue:focus {
+    background: #e6be1e;
+    display: block;
+    width: 80%;
+    margin: 0px auto 6vw;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2.4vw 0px;
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 1.8vw;
+}

@@ -35,7 +35,7 @@
 .linha:before {
   display: block;
   content: "";
-  height: 5px;
+  height: 1.56vw;
   background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
 
 .navigation {
@@ -46,25 +46,25 @@
   display: none; }
 
 .navigation--button {
-  width: 80px;
-  height: 80px;
+  width: 25vw;
+  height: 25vw;
   background: #e8be10;
-  border-radius: 10px;
+  border-radius: 3.12vw;
   transform: rotate(45deg);
   position: fixed;
-  top: -50px;
-  right: 30px; }
+  top: -15.62vw;
+  right: 9.37vw; }
 
 .navigation--button:before {
   transform: rotate(-45deg);
   display: block;
   display: block;
-  font-size: 26px;
+  font-size: 8.12vw;
   color: #fff;
   position: absolute;
   bottom: 0px;
-  margin-left: 48px;
-  margin-bottom: 6px; }
+  margin-left: 15vw;
+  margin-bottom: 1.87vw; }
 
 .header {
   background: #38184b url(../images/bg-inicio.jpg);
@@ -73,7 +73,7 @@
   border: 1px solid transparent; }
 
 .header--logo {
-  margin: 50px 0px; }
+  margin: 15.62vw 0px; }
 
 .header--logo--link {
   display: block;
@@ -84,24 +84,25 @@
   margin: auto; }
 
 .header--meta {
-  overflow: hidden;
-  margin: 40px 0px 0px; }
+  margin: 12.5vw 0px 0px; }
 
 .header--chamada, .header--chamada__direita {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 4.38vw;
   text-align: center;
   width: 90vw;
   margin: 0px auto; }
 
 .inscreva {
-  background: #2e5286;
-  width: 70vw;
-  margin: 10px auto;
+  background: rgba(46, 82, 134, 0.85);
+  width: 80vw;
+  margin: 9.37vw auto 3.12vw;
   color: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: -12.5vw;
+  z-index: 10; }
 
 .inscreva.linha:before {
   height: 2vw; }
@@ -120,6 +121,53 @@
 
 .inscreva--button,
 .inscreva--button:focus {
+  background: #e6be1e;
+  display: block;
+  width: 80%;
+  margin: 0px auto 6vw;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2.4vw 0px;
+  font-size: 5vw;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 1.8vw; }
+
+.sobre-o-evento {
+  background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat;
+  background-position: top right;
+  padding: 18.75vw 6.25vw 0; }
+
+.sobre-o-evento--chamada {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 5vw;
+  color: #222;
+  text-align: center; }
+  .sobre-o-evento--chamada:after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: url(../images/dots.png) no-repeat center center;
+    height: 3.12vw;
+    margin-bottom: 3.12vw; }
+
+.sobre-o-evento--texto {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 4.37vw;
+  color: #fff; }
+
+.sobre-o-evento--texto p {
+  display: none; }
+
+.sobre-o-evento--texto p:nth-child(1),
+.sobre-o-evento--texto p:nth-child(2) {
+  display: block; }
+
+.sobre-o-evento--button-continue,
+.sobre-o-evento--button-continue:focus {
   background: #e6be1e;
   display: block;
   width: 80%;

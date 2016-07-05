@@ -8,24 +8,24 @@
 }
 
 .navigation--button {
-    width: 80px;
-    height: 80px;
+    width: 25vw;
+    height: 25vw;
     background: rgba(232, 190, 16, 1);
-    border-radius: 10px;
+    border-radius: 3.12vw;
     transform: rotate(45deg);
     position: fixed;
-    top: -50px;
-    right: 30px;
+    top: -15.62vw;
+    right: 9.37vw;
 }
 
 .navigation--button:before {
     transform: rotate(-45deg);
     display: block;
     display: block;
-    font-size: 26px;
+    font-size: 8.12vw;
     color: #fff;
     position: absolute;
     bottom: 0px;
-    margin-left: 48px;
-    margin-bottom: 6px;
+    margin-left: 15vw;
+    margin-bottom: 1.87vw;
 }
