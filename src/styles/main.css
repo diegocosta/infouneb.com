@@ -142,8 +142,8 @@
 .sobre-o-evento--chamada {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
-  font-size: 5vw;
-  color: #222;
+  font-size: 4.8vw;
+  color: #fff;
   text-align: center; }
   .sobre-o-evento--chamada:after {
     content: "";
@@ -159,17 +159,11 @@
   font-size: 4.37vw;
   color: #fff; }
 
-.sobre-o-evento--texto p {
-  display: none; }
-
-.sobre-o-evento--texto p:nth-child(1),
-.sobre-o-evento--texto p:nth-child(2) {
-  display: block; }
-
 .sobre-o-evento--button-continue,
 .sobre-o-evento--button-continue:focus {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   background: #e6be1e;
-  display: block;
+  display: none;
   width: 80%;
   margin: 0px auto 6vw;
   color: #fff;
