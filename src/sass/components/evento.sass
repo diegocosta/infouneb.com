@@ -1,0 +1,43 @@
+.sobre-o-evento
+  background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat
+  background-position: top right
+  padding: 18.75vw 6.25vw 0
+
+.sobre-o-evento--chamada
+  font-family: 'Open Sans', sans-serif
+  font-weight: 900
+  font-size: 4.8vw
+  color: #fff
+  text-align: center
+
+  &:after
+    content: ""
+    display: block
+    width: 100%
+    background: url(../images/dots.png) no-repeat center center
+    height: 3.12vw
+    margin-bottom: 3.12vw
+
+.sobre-o-evento--texto
+  font-family: 'Open Sans', sans-serif
+  font-weight: 400
+  font-size: 4.37vw
+  color: #fff
+
+.sobre-o-evento--button-continue
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+  background: #e6be1e
+  display: none
+  width: 80%
+  margin: 0px auto 6vw
+  color: #fff
+  text-transform: uppercase
+  text-align: center
+  padding: 2.4vw 0px
+  font-size: 5vw
+  font-weight: 700
+  font-family: 'Open Sans', sans-serif
+  border-radius: 1.8vw
+
+  &:focus
+    @extend .sobre-o-evento--button-continue

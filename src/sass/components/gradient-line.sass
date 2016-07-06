@@ -1,0 +1,23 @@
+$cor-vermelho: rgba(193, 48, 48, 1)
+$cor-azul: rgba(56, 97, 158, 1)
+$cor-roxo: rgba(53, 19, 71, 1)
+$cor-amarelo: rgba(232, 190, 16, 1)
+$cor-lilas: rgba(150, 48, 150, 1)
+$cor-verde: rgba(56, 147, 71, 1)
+
+$primeira-cor: $cor-roxo
+$segunda-cor: $cor-azul
+$terceira-cor: $cor-lilas
+$quarta-cor: $cor-vermelho
+$quinta-cor: $cor-amarelo
+$sexta-cor: $cor-verde
+
+.gradient-line
+  background: linear-gradient(to right, $primeira-cor 0%, $primeira-cor 14%, $segunda-cor 14%, $segunda-cor 24%, $segunda-cor 31%, $terceira-cor 31%, $terceira-cor 50%, $quarta-cor 50%, $quarta-cor 66%, $quinta-cor 66%, $quinta-cor 83%, $sexta-cor 83%, $sexta-cor 100%)
+
+.gradient-line--top:before
+  @extend .gradient-line
+
+  display: block
+  content: ""
+  height: 2vw

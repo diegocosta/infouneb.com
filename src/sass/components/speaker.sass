@@ -1,0 +1,44 @@
+$speaker--date-bg: #963494
+$speaker--date-text: #fff
+
+$speaker--name-bg: #fff
+$speaker--name-text: #556BA3
+
+$speaker--time--start-bg: #963494
+$speaker--time--end-bg: #642363
+$speaker--time-text: #fff
+
+body
+  background: yellow
+
+.speaker
+  width: 80vw
+  margin: 0 auto
+  font-family: $font-family
+
+.speaker--date
+  background: $speaker--date-bg
+  color: $speaker--date-text
+  font-weight: 700
+  padding: 3px 8px
+  display: inline-block
+
+.speaker--name
+  background: $speaker--name-bg
+  color: $speaker--name-text
+  width: 50vw
+  float: left
+  text-align: center
+  text-transform: uppercase
+
+.speaker--time
+  color: $speaker--time-text
+
+  .start
+    background: $speaker--time--start-bg
+    float: left
+
+  .end
+    @extend .start
+
+    background: $speaker--time--end-bg

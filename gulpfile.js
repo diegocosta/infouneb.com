@@ -2,16 +2,16 @@
 	'use strict';
 
 	var gulp = require('gulp');
-	var plugins = require('gulp-load-plugins')({DEBUG: true, pattern: ['*']});
+	var plugins = require('gulp-load-plugins')({DEBUG: false, pattern: ['*']});
 
 	// server, watch and reload
 	gulp.task('connect', task('connect', 'src'));
 	gulp.task('changes', task('changes', 'src/**/*'));
-	gulp.task('watch', task('watch', 'src/', [{ tasks: ['sass'], src : 'sass/**/*.scss' }] ));
+	gulp.task('watch', task('watch', 'src/', [{ tasks: ['sass'], src : 'sass/**/*.sass' }] ));
 	gulp.task('server', ['sass', 'connect', 'watch']);
 
 	// compile
-	gulp.task('sass', task('sass', 'src/sass/main.scss', 'src/styles'));
+	gulp.task('sass', task('sass', 'src/sass/main.sass', 'src/styles'));
 
 	// compress
 	gulp.task('imagemin', task('imagemin', 'src/images/**/*', 'images'));
