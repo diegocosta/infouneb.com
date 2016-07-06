@@ -1,3 +1,6 @@
+body {
+  background: red; }
+
 @font-face {
   font-family: "infouneb-2016";
   src: url("../fonts/infouneb-2016.eot");
@@ -32,11 +35,13 @@
 .icon-menu:before {
   content: "\61"; }
 
-.linha:before {
+.gradient-line, .gradient-line--top:before, .container:before, .inscreva:before {
+  background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
+
+.gradient-line--top:before, .container:before, .inscreva:before {
   display: block;
   content: "";
-  height: 1.56vw;
-  background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
+  height: 2vw; }
 
 .navigation {
   position: relative; }
@@ -57,7 +62,6 @@
 
 .navigation--button:before {
   transform: rotate(-45deg);
-  display: block;
   display: block;
   font-size: 8.12vw;
   color: #fff;
@@ -96,16 +100,15 @@
   margin: 0px auto; }
 
 .inscreva {
-  background: rgba(46, 82, 134, 0.85);
+  background: #2e5286;
   width: 80vw;
   margin: 9.37vw auto 3.12vw;
   color: #fff;
   overflow: hidden;
   margin-bottom: -12.5vw;
   z-index: 10; }
-
-.inscreva.linha:before {
-  height: 2vw; }
+  .inscreva:before {
+    height: 2vw; }
 
 .inscreva--data {
   padding: 9vw 2.8vw 5vw;
@@ -119,8 +122,7 @@
     display: block;
     font-size: 6.5vw; }
 
-.inscreva--button,
-.inscreva--button:focus {
+.inscreva--button, .inscreva--button:focus {
   background: #e6be1e;
   display: block;
   width: 80%;
@@ -159,8 +161,7 @@
   font-size: 4.37vw;
   color: #fff; }
 
-.sobre-o-evento--button-continue,
-.sobre-o-evento--button-continue:focus {
+.sobre-o-evento--button-continue, .sobre-o-evento--button-continue:focus {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   background: #e6be1e;
   display: none;
@@ -175,6 +176,34 @@
   font-family: 'Open Sans', sans-serif;
   border-radius: 1.8vw; }
 
-.container.linha:before {
-  position: fixed;
-  width: 100%; }
+/* organizado */
+body {
+  background: yellow; }
+
+.speaker {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif; }
+
+.speaker--date {
+  background: #963494;
+  color: #fff;
+  font-weight: 700;
+  padding: 3px 8px;
+  display: inline-block; }
+
+.speaker--name {
+  background: #fff;
+  color: #556BA3;
+  width: 50vw;
+  float: left;
+  text-align: center;
+  text-transform: uppercase; }
+
+.speaker--time {
+  color: #fff; }
+  .speaker--time .start, .speaker--time .end {
+    background: #963494;
+    float: left; }
+  .speaker--time .end {
+    background: #642363; }
