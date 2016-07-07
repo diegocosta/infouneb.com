@@ -1,6 +1,3 @@
-body {
-  background: red; }
-
 @font-face {
   font-family: "infouneb-2016";
   src: url("../fonts/infouneb-2016.eot");
@@ -144,7 +141,7 @@ body {
 .sobre-o-evento--chamada {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
-  font-size: 4.8vw;
+  font-size: 4.375vw;
   color: #fff;
   text-align: center; }
   .sobre-o-evento--chamada:after {
@@ -152,13 +149,13 @@ body {
     display: block;
     width: 100%;
     background: url(../images/dots.png) no-repeat center center;
-    height: 3.12vw;
-    margin-bottom: 3.12vw; }
+    height: 3.125vw;
+    margin-bottom: 3.125vw; }
 
 .sobre-o-evento--texto {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 4.37vw;
+  font-size: 4.375vw;
   color: #fff; }
 
 .sobre-o-evento--button-continue, .sobre-o-evento--button-continue:focus {
@@ -170,11 +167,11 @@ body {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  padding: 2.4vw 0px;
+  padding: 2.5vw 0px;
   font-size: 5vw;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
-  border-radius: 1.8vw; }
+  border-radius: 1.875vw; }
 
 /* organizado */
 body {
