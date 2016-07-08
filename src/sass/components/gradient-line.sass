@@ -12,12 +12,16 @@ $quarta-cor: $cor-vermelho
 $quinta-cor: $cor-amarelo
 $sexta-cor: $cor-verde
 
+$vw-context-enabled: true
+
 .gradient-line
   background: linear-gradient(to right, $primeira-cor 0%, $primeira-cor 14%, $segunda-cor 14%, $segunda-cor 24%, $segunda-cor 31%, $terceira-cor 31%, $terceira-cor 50%, $quarta-cor 50%, $quarta-cor 66%, $quinta-cor 66%, $quinta-cor 83%, $sexta-cor 83%, $sexta-cor 100%)
 
 .gradient-line--top:before
   @extend .gradient-line
-
   display: block
   content: ""
-  height: 2vw
+  height: get-vw(7px)
+
+
+$vw-context-enabled: false

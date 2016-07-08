@@ -8,11 +8,13 @@ $speaker--time--start-bg: #963494
 $speaker--time--end-bg: #642363
 $speaker--time-text: #fff
 
+$vw-context-enabled: true
+
 body
   background: yellow
 
 .speaker
-  width: 80vw
+  width: get-vw(256px)
   margin: 0 auto
   font-family: $font-family
 
@@ -20,13 +22,13 @@ body
   background: $speaker--date-bg
   color: $speaker--date-text
   font-weight: 700
-  padding: 3px 8px
+  padding: get-vw(3px) get-vw(8px)
   display: inline-block
 
 .speaker--name
   background: $speaker--name-bg
   color: $speaker--name-text
-  width: 50vw
+  width: get-vw(160px)
   float: left
   text-align: center
   text-transform: uppercase
@@ -40,5 +42,7 @@ body
 
   .end
     @extend .start
-
     background: $speaker--time--end-bg
+
+
+$vw-context-enabled: false

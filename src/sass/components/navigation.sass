@@ -1,3 +1,5 @@
+$vw-context-enabled: true
+
 .navigation
   position: relative
 
@@ -6,21 +8,24 @@
   display: none
 
 .navigation--button
-  width: 25vw
-  height: 25vw
+  width: get-vw(80px)
+  height: get-vw(80px)
   background: rgba(232, 190, 16, 1)
-  border-radius: 3.12vw
+  border-radius: get-vw(10px)
   transform: rotate(45deg)
   position: fixed
-  top: -15.62vw
-  right: 9.37vw
+  top: get-vw(-50px)
+  right: get-vw(30px)
 
 .navigation--button:before
   transform: rotate(-45deg)
   display: block
-  font-size: 8.12vw
+  font-size: get-vw(26px)
   color: #fff
   position: absolute
   bottom: 0px
-  margin-left: 15vw
-  margin-bottom: 1.87vw
+  margin-left: get-vw(48px)
+  margin-bottom: get-vw(6px)
+
+
+  $vw-context-enabled: false

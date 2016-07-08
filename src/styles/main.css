@@ -38,7 +38,7 @@
 .gradient-line--top:before, .container:before, .inscreva:before {
   display: block;
   content: "";
-  height: 2vw; }
+  height: 2.1875vw; }
 
 .navigation {
   position: relative; }
@@ -51,21 +51,21 @@
   width: 25vw;
   height: 25vw;
   background: #e8be10;
-  border-radius: 3.12vw;
+  border-radius: 3.125vw;
   transform: rotate(45deg);
   position: fixed;
-  top: -15.62vw;
-  right: 9.37vw; }
+  top: -15.625vw;
+  right: 9.375vw; }
 
 .navigation--button:before {
   transform: rotate(-45deg);
   display: block;
-  font-size: 8.12vw;
+  font-size: 8.125vw;
   color: #fff;
   position: absolute;
   bottom: 0px;
   margin-left: 15vw;
-  margin-bottom: 1.87vw; }
+  margin-bottom: 1.875vw; }
 
 .header {
   background: #38184b url(../images/bg-inicio.jpg);
@@ -74,7 +74,7 @@
   border: 1px solid transparent; }
 
 .header--logo {
-  margin: 15.62vw 0px; }
+  margin: 15.625vw 0px; }
 
 .header--logo--link {
   display: block;
@@ -91,7 +91,7 @@
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-weight: 600;
-  font-size: 4.38vw;
+  font-size: 4.375vw;
   text-align: center;
   width: 90vw;
   margin: 0px auto; }
@@ -99,39 +99,39 @@
 .inscreva {
   background: #2e5286;
   width: 80vw;
-  margin: 9.37vw auto 3.12vw;
+  margin: 9.375vw auto 3.125vw;
   color: #fff;
   overflow: hidden;
   margin-bottom: -12.5vw;
   z-index: 10; }
   .inscreva:before {
-    height: 2vw; }
+    height: 1.96875vw; }
 
 .inscreva--data {
-  padding: 9vw 2.8vw 5vw;
+  padding: 9.375vw 2.8125vw 5vw;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 14.4vw;
+  font-size: 14.375vw;
   line-height: 1; }
   .inscreva--data span {
     display: block;
-    font-size: 6.5vw; }
+    font-size: 6.25vw; }
 
 .inscreva--button, .inscreva--button:focus {
   background: #e6be1e;
   display: block;
   width: 80%;
-  margin: 0px auto 6vw;
+  margin: 0px auto 6.25vw;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  padding: 2.4vw 0px;
+  padding: 2.5vw 0px;
   font-size: 5vw;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
-  border-radius: 1.8vw; }
+  border-radius: 1.875vw; }
 
 .sobre-o-evento {
   background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat;
@@ -186,7 +186,7 @@ body {
   background: #963494;
   color: #fff;
   font-weight: 700;
-  padding: 3px 8px;
+  padding: 0.9375vw 2.5vw;
   display: inline-block; }
 
 .speaker--name {

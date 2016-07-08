@@ -1,43 +1,47 @@
+$vw-context-enabled: true
+
 .inscreva
   background: #2e5286
-  width: 80vw
-  margin: 9.37vw auto 3.12vw
+  width: get-vw(256px)
+  margin: get-vw(30px) auto get-vw(10px)
   color: #fff
   overflow: hidden
-  margin-bottom: -12.5vw
+  margin-bottom: get-vw(-40px)
   z-index: 10
 
   &:before
     @extend .gradient-line--top
-
-    height: 2vw
+    height: get-vw(6.3px)
 
 .inscreva--data
-  padding: 9vw 2.8vw 5vw
+  padding: get-vw(30px) get-vw(9px) get-vw(16px)
   text-align: center
   text-transform: uppercase
   font-family: 'Open Sans', sans-serif
   font-weight: 700
-  font-size: 14.4vw
+  font-size: get-vw(46px)
   line-height: 1
 
   span
     display: block
-    font-size: 6.5vw
+    font-size: get-vw(20px)
 
 .inscreva--button
   background: #e6be1e
   display: block
   width: 80%
-  margin: 0px auto 6vw
+  margin: 0px auto get-vw(20px)
   color: #fff
   text-transform: uppercase
   text-align: center
-  padding: 2.4vw 0px
-  font-size: 5vw
+  padding: get-vw(8px) 0px
+  font-size: get-vw(16px)
   font-weight: 700
   font-family: 'Open Sans', sans-serif
-  border-radius: 1.8vw
+  border-radius: get-vw(6px)
 
   &:focus
     @extend .inscreva--button
+
+
+$vw-context-enabled: false

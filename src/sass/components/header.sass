@@ -1,3 +1,5 @@
+$vw-context-enabled: true
+
 .header
   background: #38184b url(../images/bg-inicio.jpg)
   background-size: cover
@@ -5,27 +7,30 @@
   border: 1px solid transparent
 
 .header--logo
-  margin: 15.62vw 0px
+  margin: get-vw(50px) 0px
 
 .header--logo--link
   display: block
   background: url(../images/logo.png)
   background-size: contain
-  width: 70vw
-  height: 35vw
+  width: get-vw(224px)
+  height: get-vw(112px)
   margin: auto
 
 .header--meta
-  margin: 12.5vw 0px 0px
+  margin: get-vw(40px) 0px 0px
 
 .header--chamada
   font-family: 'Open Sans', sans-serif
   color: #fff
   font-weight: 600
-  font-size: 4.38vw
+  font-size: get-vw(14px)
   text-align: center
-  width: 90vw
+  width: get-vw(288px)
   margin: 0px auto
 
   &__direita
     @extend .header--chamada
+
+
+$vw-context-enabled: false
