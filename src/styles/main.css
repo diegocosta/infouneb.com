@@ -183,11 +183,14 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .speaker--date {
-  background: #963494;
   color: #fff;
   font-weight: 700;
-  padding: 0.9375vw 2.5vw;
-  display: inline-block; }
+  padding: 0.9375vw;
+  display: block;
+  font-size: 5.625vw; }
+
+.speaker--photo {
+  display: none; }
 
 .speaker--name {
   background: #fff;
@@ -195,12 +198,77 @@ body {
   width: 50vw;
   float: left;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.75vw;
+  line-height: 2.4; }
 
 .speaker--time {
-  color: #fff; }
+  color: #fff;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 3.75vw;
+  line-height: 2.4; }
   .speaker--time .start, .speaker--time .end {
     background: #963494;
-    float: left; }
+    float: left;
+    width: 15vw;
+    text-align: center; }
   .speaker--time .end {
     background: #642363; }
+
+.speaker--title {
+  background: #556BA3;
+  color: #fff;
+  font-size: 4.375vw;
+  padding: 3.125vw;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 23.75vw;
+  display: table;
+  width: 100%; }
+  .speaker--title .speaker--title--text {
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 23.75vw; }
+
+@media (min-width: 40em) {
+  .speaker {
+    width: 100%;
+    position: relative; }
+  .speaker--date {
+    padding: 3px 8px;
+    font-size: 18px;
+    background: #963494;
+    display: inline-block;
+    position: absolute;
+    top: 0; }
+  .speaker--photo {
+    display: block; }
+  .speaker--name {
+    width: 60%;
+    font-size: 12px; }
+  .speaker--time {
+    font-size: 12px;
+    width: 39.5%; }
+    .speaker--time .start, .speaker--time .end, .speaker--time .start-medium, .speaker--time .end {
+      width: 50%; }
+  .speaker--title {
+    font-size: 14px;
+    padding: 10px;
+    min-height: 76px;
+    width: 100%; }
+    .speaker--title .speaker--title--text {
+      min-height: 76px; } }
+
+@media (min-width: 64em) {
+  .speakers {
+    padding: 60px 0; }
+  .speaker--date {
+    margin-top: -5px;
+    margin-left: -10px; }
+  .speaker--meta {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -80px; } }

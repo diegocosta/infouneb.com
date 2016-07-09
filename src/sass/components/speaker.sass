@@ -8,41 +8,129 @@ $speaker--time--start-bg: #963494
 $speaker--time--end-bg: #642363
 $speaker--time-text: #fff
 
+$speaker--title-bg: #556BA3
+$speaker--title-text: #fff
+
 $vw-context-enabled: true
 
 body
-  background: yellow
+    background: yellow
 
 .speaker
-  width: get-vw(256px)
-  margin: 0 auto
-  font-family: $font-family
+    width: get-vw(256px)
+    margin: 0 auto
+    font-family: $font-family
 
 .speaker--date
-  background: $speaker--date-bg
-  color: $speaker--date-text
-  font-weight: 700
-  padding: get-vw(3px) get-vw(8px)
-  display: inline-block
+    color: $speaker--date-text
+    font-weight: 700
+    padding: get-vw(3px)
+    display: block
+    font-size: get-vw(18px)
+
+.speaker--photo
+    display: none
 
 .speaker--name
-  background: $speaker--name-bg
-  color: $speaker--name-text
-  width: get-vw(160px)
-  float: left
-  text-align: center
-  text-transform: uppercase
+    background: $speaker--name-bg
+    color: $speaker--name-text
+    width: get-vw(160px)
+    float: left
+    text-align: center
+    text-transform: uppercase
+    font-weight: 700
+    font-size: get-vw(12px)
+    line-height: 2.4
 
 .speaker--time
-  color: $speaker--time-text
+    color: $speaker--time-text
+    overflow: hidden
+    font-weight: 700
+    font-size: get-vw(12px)
+    line-height: 2.4
 
-  .start
-    background: $speaker--time--start-bg
-    float: left
+    .start
+        background: $speaker--time--start-bg
+        float: left
+        width: get-vw(48px)
+        text-align: center
 
-  .end
-    @extend .start
-    background: $speaker--time--end-bg
+    .end
+        @extend .start
+        background: $speaker--time--end-bg
+
+.speaker--title
+    background: $speaker--title-bg
+    color: $speaker--title-text
+    font-size: get-vw(14px)
+    padding: get-vw(10px)
+    text-align: center
+    text-transform: uppercase
+    min-height: get-vw(76px)
+    display: table
+    width: 100%
+
+    .speaker--title--text
+        display: table-cell
+        vertical-align: middle
+        min-height: get-vw(76px)
 
 
 $vw-context-enabled: false
+
+@media #{$media-query-medium}
+
+    .speaker
+        width: 100%
+        position: relative
+
+    .speaker--date
+        padding: get-vw(3px) get-vw(8px)
+        font-size: get-vw(18px)
+
+        background: $speaker--date-bg
+        display: inline-block
+        position: absolute
+        top: 0
+
+    .speaker--photo
+        display: block
+
+    .speaker--name
+        width: 60%
+        font-size: get-vw(12px)
+
+    .speaker--time
+        font-size: get-vw(12px)
+        width: 39.5%
+
+        .start, .start-medium
+            width: 50%
+
+        .end
+            @extend .start-medium
+
+    .speaker--title
+        font-size: get-vw(14px)
+        padding: get-vw(10px)
+        min-height: get-vw(76px)
+        width: 100%
+
+        .speaker--title--text
+            min-height: get-vw(76px)
+
+
+@media #{$media-query-large}
+
+    .speakers
+        padding: get-vw(60px) 0
+
+    .speaker--date
+        margin-top: get-vw(-5px)
+        margin-left: get-vw(-10px)
+
+    .speaker--meta
+        width: 80%
+        margin: 0 auto
+        position: relative
+        margin-top: get-vw(-80px)

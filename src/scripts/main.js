@@ -24,5 +24,7 @@
             });
         });
 
+        $('.speakers .columns:last-child').addClass('end');
+
     });
 })(jQuery);
