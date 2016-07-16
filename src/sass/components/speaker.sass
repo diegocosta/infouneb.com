@@ -13,9 +13,6 @@ $speaker--title-text: #fff
 
 $vw-context-enabled: true
 
-body
-    background: yellow
-
 .speaker
     width: get-vw(256px)
     margin: 0 auto
@@ -83,6 +80,7 @@ $vw-context-enabled: false
     .speaker
         width: 100%
         position: relative
+        margin-bottom: get-vw(37px)
 
     .speaker--date
         padding: get-vw(3px) get-vw(8px)
@@ -121,9 +119,6 @@ $vw-context-enabled: false
 
 
 @media #{$media-query-large}
-
-    .speakers
-        padding: get-vw(60px) 0
 
     .speaker--date
         margin-top: get-vw(-5px)

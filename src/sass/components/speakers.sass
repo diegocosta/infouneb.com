@@ -1,0 +1,54 @@
+$speakers--tab--item--colors: (1: #483e78, 2: #556ba3, 3: #e6be1e, 4: #363636)
+
+
+$vw-context-enabled: true
+
+.speakers
+    background: map-get($speakers--tab--item--colors, 1)
+    font-family: $font-family
+
+.speakers--tab
+    width: 100%
+    overflow: scroll
+
+.speakers--tab--list
+    padding: 0px
+    margin: 0px
+    width: 10000px
+
+.speakers--tab--list--item
+    list-style: none
+    display: inline
+    float: left
+
+    @each $item, $color in $speakers--tab--item--colors
+        &:nth-child(#{$item}) .speakers--tab--list--link
+            background: $color
+
+
+.speakers--tab--list--link
+    display: block
+    padding: get-vw(10px) get-vw(20px)
+    text-transform: uppercase
+    color: #fff
+    font-weight: 700
+    font-size: get-vw(18px)
+    text-align: center
+
+
+
+$vw-context-enabled: false
+
+@media #{$media-query-medium}
+
+    .speakers--tab
+        overflow: hidden
+
+    .speakers--tab--list--link
+        padding: get-vw(28px) get-vw(0px)
+        width: 300px
+        font-size: 23px
+
+    .speakers--content
+        padding: get-vw(69px) get-vw(0px)
+        overflow: hidden

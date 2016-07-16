@@ -40,6 +40,9 @@
   content: "";
   height: 2.1875vw; }
 
+.gradient-line--top:before, .container:before, .inscreva:before {
+  height: 7px; }
+
 .navigation {
   position: relative; }
 
@@ -174,8 +177,51 @@
   border-radius: 1.875vw; }
 
 /* organizado */
-body {
-  background: yellow; }
+.speakers {
+  background: #483e78;
+  font-family: "Open Sans", sans-serif; }
+
+.speakers--tab {
+  width: 100%;
+  overflow: scroll; }
+
+.speakers--tab--list {
+  padding: 0px;
+  margin: 0px;
+  width: 10000px; }
+
+.speakers--tab--list--item {
+  list-style: none;
+  display: inline;
+  float: left; }
+  .speakers--tab--list--item:nth-child(1) .speakers--tab--list--link {
+    background: #483e78; }
+  .speakers--tab--list--item:nth-child(2) .speakers--tab--list--link {
+    background: #556ba3; }
+  .speakers--tab--list--item:nth-child(3) .speakers--tab--list--link {
+    background: #e6be1e; }
+  .speakers--tab--list--item:nth-child(4) .speakers--tab--list--link {
+    background: #363636; }
+
+.speakers--tab--list--link {
+  display: block;
+  padding: 3.125vw 6.25vw;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 5.625vw;
+  text-align: center; }
+
+@media (min-width: 40em) {
+  .speakers--tab {
+    overflow: hidden; }
+  .speakers--tab--list--link {
+    padding: 28px 0px;
+    width: 300px;
+    font-size: 23px; }
+  .speakers--content {
+    padding: 69px 0px;
+    overflow: hidden; } }
 
 .speaker {
   width: 80vw;
@@ -235,7 +281,8 @@ body {
 @media (min-width: 40em) {
   .speaker {
     width: 100%;
-    position: relative; }
+    position: relative;
+    margin-bottom: 37px; }
   .speaker--date {
     padding: 3px 8px;
     font-size: 18px;
@@ -262,8 +309,6 @@ body {
       min-height: 76px; } }
 
 @media (min-width: 64em) {
-  .speakers {
-    padding: 60px 0; }
   .speaker--date {
     margin-top: -5px;
     margin-left: -10px; }
