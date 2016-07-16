@@ -1,28 +1,35 @@
 (function($){
+
     $(document).on('ready', function(){
 
-        $('.sobre-o-evento--texto p:nth-child(3), .sobre-o-evento--texto p:nth-child(4)').hide();
+        $(document).foundation();
 
-        $('.sobre-o-evento--button-continue').each(function(index, item){
-            $this = $(this);
-            $this.css('display', 'block');
-            $this.on('click', function(event){
-                event.preventDefault();
+        var MediaQueryBreakpoint = Foundation.MediaQuery.current;
 
-                var btn = $(this);
+        if(MediaQueryBreakpoint === 'small') {
+            $('.about--texto p:nth-child(3), .about--texto p:nth-child(4)').hide();
 
-                if(btn.attr('data-page') == 1){
-                    btn.text("Voltar");
-                    btn.attr("data-page", 2);
-                }
-                else {
-                    btn.text("Continuar Lendo");
-                    btn.attr("data-page", 1);
-                }
+            $('.about--button-continue').each(function(index, item){
+                $this = $(this);
+                $this.css('display', 'block');
+                $this.on('click', function(event){
+                    event.preventDefault();
 
-                $('.sobre-o-evento--texto p').toggle();
+                    var btn = $(this);
+
+                    if(btn.attr('data-page') == 1){
+                        btn.text("Voltar");
+                        btn.attr("data-page", 2);
+                    }
+                    else {
+                        btn.text("Continuar Lendo");
+                        btn.attr("data-page", 1);
+                    }
+
+                    $('.about--texto p').toggle();
+                });
             });
-        });
+        }
 
         $('.speakers .columns:last-child').addClass('end');
 

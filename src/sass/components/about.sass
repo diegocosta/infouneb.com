@@ -1,11 +1,11 @@
 $vw-context-enabled: true
 
-.sobre-o-evento
+.about
   background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat
   background-position: top right
   padding: get-vw(60px) get-vw(20px) 0
 
-.sobre-o-evento--chamada
+.about--chamada
   font-family: 'Open Sans', sans-serif
   font-weight: 900
   font-size: get-vw(14px)
@@ -20,13 +20,14 @@ $vw-context-enabled: true
     height: get-vw(10px)
     margin-bottom: get-vw(10px)
 
-.sobre-o-evento--texto
+.about--texto
   font-family: 'Open Sans', sans-serif
   font-weight: 400
   font-size: get-vw(14px)
   color: #fff
+  text-align: justify
 
-.sobre-o-evento--button-continue
+.about--button-continue
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
   background: #e6be1e
   display: none
@@ -42,7 +43,7 @@ $vw-context-enabled: true
   border-radius: get-vw(6px)
 
   &:focus
-    @extend .sobre-o-evento--button-continue
+    @extend .about--button-continue
 
 
 
@@ -51,21 +52,35 @@ $vw-context-enabled: false
 
 @media #{$media-query-medium}
 
-    .sobre-o-evento
+    .about
       padding: get-vw(60px) get-vw(20px) 0
+      background-position: top center
+      background-size: contain
+      height: 720px
 
-    .sobre-o-evento--chamada
-      font-size: get-vw(14px)
+      > .row
+        margin-top: 168px
+
+      > .row, > .row .columns
+        position: relative
+        height: 474px
+
+    .about--chamada
+      font-size: get-vw(24px)
+      text-align: left
+      position: absolute
+      bottom: 0
 
       &:after
         height: get-vw(10px)
         margin-bottom: get-vw(10px)
+        background-position: top left
+        position: absolute
+        top: -20px
 
-    .sobre-o-evento--texto
+    .about--texto
       font-size: get-vw(14px)
+      padding: 0px 60px
 
-    .sobre-o-evento--button-continue
-      margin: 0px auto get-vw(19.2px)
-      padding: get-vw(8px) 0px
-      font-size: get-vw(16px)
-      border-radius: get-vw(6px)
+    .about--button-continue
+        display: none !important

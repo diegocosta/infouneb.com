@@ -38,15 +38,20 @@ $vw-context-enabled: false
 @media #{$media-query-medium}
 
     .header--logo
-      margin: get-vw(50px) 0px
+      margin: get-vw(100px) 0px
 
     .header--logo--link
-      width: get-vw(224px)
-      height: get-vw(112px)
+      width: get-vw(616px)
+      height: get-vw(308px)
 
     .header--meta
       margin: get-vw(40px) 0px 0px
 
     .header--chamada
       font-size: get-vw(14px)
-      width: get-vw(288px)
+      width: auto
+      text-transform: uppercase
+      text-align: left
+
+      &__direita
+        text-align: right

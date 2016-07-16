@@ -113,15 +113,19 @@
 
 @media (min-width: 40em) {
   .header--logo {
-    margin: 50px 0px; }
+    margin: 100px 0px; }
   .header--logo--link {
-    width: 224px;
-    height: 112px; }
+    width: 616px;
+    height: 308px; }
   .header--meta {
     margin: 40px 0px 0px; }
   .header--chamada, .header--chamada__direita {
     font-size: 14px;
-    width: 288px; } }
+    width: auto;
+    text-transform: uppercase;
+    text-align: left; }
+    .header--chamada__direita {
+      text-align: right; } }
 
 .inscreva {
   background: #2e5286;
@@ -162,34 +166,35 @@
 
 @media (min-width: 40em) {
   .inscreva {
-    width: 256px;
+    width: 280px;
     margin: 30px auto 10px;
-    margin-bottom: -40px; }
+    margin-bottom: -40px;
+    height: 234px; }
     .inscreva:before {
       height: 6.3px; }
   .inscreva--data {
-    padding: 30px 9px 16px;
-    font-size: 46px; }
+    padding: 40px 9px 16px;
+    font-size: 60px; }
     .inscreva--data span {
-      font-size: 20px; }
+      font-size: 28px; }
   .inscreva--button, .inscreva--button:focus {
     margin: 0px auto 20px;
     padding: 8px 0px;
-    font-size: 16px;
+    font-size: 24px;
     border-radius: 6px; } }
 
-.sobre-o-evento {
+.about {
   background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat;
   background-position: top right;
   padding: 18.75vw 6.25vw 0; }
 
-.sobre-o-evento--chamada {
+.about--chamada {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
   font-size: 4.375vw;
   color: #fff;
   text-align: center; }
-  .sobre-o-evento--chamada:after {
+  .about--chamada:after {
     content: "";
     display: block;
     width: 100%;
@@ -197,13 +202,14 @@
     height: 3.125vw;
     margin-bottom: 3.125vw; }
 
-.sobre-o-evento--texto {
+.about--texto {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 4.375vw;
-  color: #fff; }
+  color: #fff;
+  text-align: justify; }
 
-.sobre-o-evento--button-continue, .sobre-o-evento--button-continue:focus {
+.about--button-continue, .about--button-continue:focus {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   background: #e6be1e;
   display: none;
@@ -219,20 +225,32 @@
   border-radius: 1.875vw; }
 
 @media (min-width: 40em) {
-  .sobre-o-evento {
-    padding: 60px 20px 0; }
-  .sobre-o-evento--chamada {
-    font-size: 14px; }
-    .sobre-o-evento--chamada:after {
+  .about {
+    padding: 60px 20px 0;
+    background-position: top center;
+    background-size: contain;
+    height: 720px; }
+    .about > .row {
+      margin-top: 168px; }
+    .about > .row, .about > .row .columns {
+      position: relative;
+      height: 474px; }
+  .about--chamada {
+    font-size: 24px;
+    text-align: left;
+    position: absolute;
+    bottom: 0; }
+    .about--chamada:after {
       height: 10px;
-      margin-bottom: 10px; }
-  .sobre-o-evento--texto {
-    font-size: 14px; }
-  .sobre-o-evento--button-continue, .sobre-o-evento--button-continue:focus {
-    margin: 0px auto 19.2px;
-    padding: 8px 0px;
-    font-size: 16px;
-    border-radius: 6px; } }
+      margin-bottom: 10px;
+      background-position: top left;
+      position: absolute;
+      top: -20px; }
+  .about--texto {
+    font-size: 14px;
+    padding: 0px 60px; }
+  .about--button-continue, .about--button-continue:focus {
+    display: none !important; } }
 
 /* organizado */
 .speakers {
