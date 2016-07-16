@@ -45,3 +45,27 @@ $vw-context-enabled: true
 
 
 $vw-context-enabled: false
+
+
+@media #{$media-query-medium}
+
+    .inscreva
+      width: get-vw(256px)
+      margin: get-vw(30px) auto get-vw(10px)
+      margin-bottom: get-vw(-40px)
+
+      &:before
+        height: get-vw(6.3px)
+
+    .inscreva--data
+      padding: get-vw(30px) get-vw(9px) get-vw(16px)
+      font-size: get-vw(46px)
+
+      span
+        font-size: get-vw(20px)
+
+    .inscreva--button
+      margin: 0px auto get-vw(20px)
+      padding: get-vw(8px) 0px
+      font-size: get-vw(16px)
+      border-radius: get-vw(6px)

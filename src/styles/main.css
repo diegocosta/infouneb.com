@@ -70,6 +70,18 @@
   margin-left: 15vw;
   margin-bottom: 1.875vw; }
 
+@media (min-width: 40em) {
+  .navigation--button {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    top: -50px;
+    right: 30px; }
+  .navigation--button:before {
+    font-size: 26px;
+    margin-left: 48px;
+    margin-bottom: 6px; } }
+
 .header {
   background: #38184b url(../images/bg-inicio.jpg);
   background-size: cover;
@@ -98,6 +110,18 @@
   text-align: center;
   width: 90vw;
   margin: 0px auto; }
+
+@media (min-width: 40em) {
+  .header--logo {
+    margin: 50px 0px; }
+  .header--logo--link {
+    width: 224px;
+    height: 112px; }
+  .header--meta {
+    margin: 40px 0px 0px; }
+  .header--chamada, .header--chamada__direita {
+    font-size: 14px;
+    width: 288px; } }
 
 .inscreva {
   background: #2e5286;
@@ -135,6 +159,24 @@
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   border-radius: 1.875vw; }
+
+@media (min-width: 40em) {
+  .inscreva {
+    width: 256px;
+    margin: 30px auto 10px;
+    margin-bottom: -40px; }
+    .inscreva:before {
+      height: 6.3px; }
+  .inscreva--data {
+    padding: 30px 9px 16px;
+    font-size: 46px; }
+    .inscreva--data span {
+      font-size: 20px; }
+  .inscreva--button, .inscreva--button:focus {
+    margin: 0px auto 20px;
+    padding: 8px 0px;
+    font-size: 16px;
+    border-radius: 6px; } }
 
 .sobre-o-evento {
   background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat;
@@ -175,6 +217,22 @@
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   border-radius: 1.875vw; }
+
+@media (min-width: 40em) {
+  .sobre-o-evento {
+    padding: 60px 20px 0; }
+  .sobre-o-evento--chamada {
+    font-size: 14px; }
+    .sobre-o-evento--chamada:after {
+      height: 10px;
+      margin-bottom: 10px; }
+  .sobre-o-evento--texto {
+    font-size: 14px; }
+  .sobre-o-evento--button-continue, .sobre-o-evento--button-continue:focus {
+    margin: 0px auto 19.2px;
+    padding: 8px 0px;
+    font-size: 16px;
+    border-radius: 6px; } }
 
 /* organizado */
 .speakers {

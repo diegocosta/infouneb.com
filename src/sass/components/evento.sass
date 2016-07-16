@@ -47,3 +47,25 @@ $vw-context-enabled: true
 
 
 $vw-context-enabled: false
+
+
+@media #{$media-query-medium}
+
+    .sobre-o-evento
+      padding: get-vw(60px) get-vw(20px) 0
+
+    .sobre-o-evento--chamada
+      font-size: get-vw(14px)
+
+      &:after
+        height: get-vw(10px)
+        margin-bottom: get-vw(10px)
+
+    .sobre-o-evento--texto
+      font-size: get-vw(14px)
+
+    .sobre-o-evento--button-continue
+      margin: 0px auto get-vw(19.2px)
+      padding: get-vw(8px) 0px
+      font-size: get-vw(16px)
+      border-radius: get-vw(6px)
