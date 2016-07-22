@@ -14,17 +14,32 @@ $sexta-cor: $cor-verde
 
 $vw-context-enabled: true
 
-.gradient-line
+.gradient-line--to-right
   background: linear-gradient(to right, $primeira-cor 0%, $primeira-cor 14%, $segunda-cor 14%, $segunda-cor 24%, $segunda-cor 31%, $terceira-cor 31%, $terceira-cor 50%, $quarta-cor 50%, $quarta-cor 66%, $quinta-cor 66%, $quinta-cor 83%, $sexta-cor 83%, $sexta-cor 100%)
 
+.gradient-line--to-bottom
+  background: linear-gradient(to bottom, $cor-amarelo 0%, $cor-amarelo 20%, $cor-azul 20%, $cor-azul 40%, $cor-roxo 40%, $cor-roxo 60%, $cor-lilas 60%, $cor-lilas 80%, $cor-vermelho 80%, $cor-vermelho 100%)
+
 .gradient-line--top:before
-  @extend .gradient-line
+  @extend .gradient-line--to-right
   display: block
   content: ""
   height: get-vw(7px)
 
+.gradient-line--chamada:before
+    @extend .gradient-line--to-bottom
 
 $vw-context-enabled: false
 
-.gradient-line--top:before
-  height: get-vw(7px)
+@media #{$media-query-medium}
+
+    .gradient-line--top:before
+        height: get-vw(7px)
+
+    .gradient-line--chamada:before
+        display: block
+        content: ""
+        width: get-vw(9px)
+        height: get-vw(68px)
+        float: left
+        margin-right: get-vw(10px)

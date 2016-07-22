@@ -21,16 +21,21 @@ $vw-context-enabled: true
   margin: get-vw(40px) 0px 0px
 
 .header--chamada
-  font-family: 'Open Sans', sans-serif
-  color: #fff
-  font-weight: 600
-  font-size: get-vw(14px)
-  text-align: center
-  width: get-vw(288px)
-  margin: 0px auto
+    @extend .gradient-line--chamada
+    font-family: 'Open Sans', sans-serif
+    color: #fff
+    font-weight: 600
+    font-size: get-vw(14px)
+    text-align: center
+    width: get-vw(288px)
+    margin: 0px auto
 
-  &__direita
-    @extend .header--chamada
+    &__direita
+        @extend .header--chamada
+
+        &:before
+            float: right
+            margin-left: 10px
 
 
 $vw-context-enabled: false
