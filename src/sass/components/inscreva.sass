@@ -27,21 +27,25 @@ $vw-context-enabled: true
     font-size: get-vw(20px)
 
 .inscreva--button
-  background: #e6be1e
-  display: block
-  width: 80%
-  margin: 0px auto get-vw(20px)
-  color: #fff
-  text-transform: uppercase
-  text-align: center
-  padding: get-vw(8px) 0px
-  font-size: get-vw(16px)
-  font-weight: 700
-  font-family: 'Open Sans', sans-serif
-  border-radius: get-vw(6px)
+    background: #e6be1e
+    display: block
+    width: 80%
+    margin: 0px auto get-vw(20px)
+    color: #fff
+    text-transform: uppercase
+    text-align: center
+    padding: get-vw(8px) 0px
+    font-size: get-vw(16px)
+    font-weight: 700
+    font-family: 'Open Sans', sans-serif
+    border-radius: get-vw(6px)
+    transition: all linear 300ms
 
-  &:focus
-    @extend .inscreva--button
+    &:focus, &:hover
+        @extend .inscreva--button
+
+    &:hover
+        transform: scale(1.1)
 
 
 $vw-context-enabled: false
@@ -50,7 +54,8 @@ $vw-context-enabled: false
 @media #{$media-query-medium}
 
     .inscreva
-      width: get-vw(280px)
+      width: 100%
+      min-width: get-vw(228px)
       margin: get-vw(30px) auto get-vw(10px)
       margin-bottom: get-vw(-40px)
       height: 234px

@@ -7,6 +7,11 @@ $vw-context-enabled: true
     background: map-get($speakers--tab--item--colors, 1)
     font-family: $font-family
 
+    @each $item, $color in $speakers--tab--item--colors
+        &__tab_#{$item}
+            background: $color
+
+
 .speakers--tab
     width: 100%
     overflow: scroll

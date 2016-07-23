@@ -134,10 +134,11 @@
   .header--meta {
     margin: 40px 0px 0px; }
   .header--chamada, .header--chamada__direita {
-    font-size: 14px;
+    font-size: 16px;
     width: auto;
     text-transform: uppercase;
-    text-align: left; }
+    text-align: left;
+    margin-top: 100px; }
     .header--chamada__direita {
       text-align: right; } }
 
@@ -164,7 +165,7 @@
     display: block;
     font-size: 6.25vw; }
 
-.inscreva--button, .inscreva--button:focus {
+.inscreva--button, .inscreva--button:focus, .inscreva--button:hover {
   background: #e6be1e;
   display: block;
   width: 80%;
@@ -176,11 +177,15 @@
   font-size: 5vw;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
-  border-radius: 1.875vw; }
+  border-radius: 1.875vw;
+  transition: all linear 300ms; }
+  .inscreva--button:hover {
+    transform: scale(1.1); }
 
 @media (min-width: 40em) {
   .inscreva {
-    width: 280px;
+    width: 100%;
+    min-width: 228px;
     margin: 30px auto 10px;
     margin-bottom: -40px;
     height: 234px; }
@@ -191,7 +196,7 @@
     font-size: 60px; }
     .inscreva--data span {
       font-size: 28px; }
-  .inscreva--button, .inscreva--button:focus {
+  .inscreva--button, .inscreva--button:focus, .inscreva--button:hover {
     margin: 0px auto 20px;
     padding: 8px 0px;
     font-size: 24px;
@@ -270,6 +275,14 @@
 .speakers {
   background: #483e78;
   font-family: "Open Sans", sans-serif; }
+  .speakers__tab_1 {
+    background: #483e78; }
+  .speakers__tab_2 {
+    background: #556ba3; }
+  .speakers__tab_3 {
+    background: #e6be1e; }
+  .speakers__tab_4 {
+    background: #363636; }
 
 .speakers--tab {
   width: 100%;
@@ -407,3 +420,6 @@
     margin: 0 auto;
     position: relative;
     margin-top: -80px; } }
+
+.footer {
+  background: #d7d7d7; }
