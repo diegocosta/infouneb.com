@@ -27,8 +27,11 @@
 
         $('.speakers').each(function(index, item){
             var speakers = $(this);
+            var speakers_style = speakers.data('tab-content-style');
 
+            speakers.addClass(speakers_style);
             speakers.find('[data-tab-content-hide]').hide();
+
             speakers.find('.speakers--tab--list--item').find('.speakers--tab--list--link').on('click', function(event){
                 event.preventDefault();
 
@@ -36,7 +39,14 @@
 
                 speakers.find('[data-tab-content-for]').hide();
                 speakers.find('[data-tab-content-for="' + target + '"]').show();
-                speakers.addClass('speakers__tab_' + target);
+
+                speakers_style = speakers.attr('data-tab-content-style');
+                speakers.removeClass(speakers_style);
+
+                var speakers_new_style = 'speakers__tab_' + target;
+
+                speakers.addClass(speakers_new_style);
+                speakers.attr('data-tab-content-style', speakers_new_style);
             });
 
         });
