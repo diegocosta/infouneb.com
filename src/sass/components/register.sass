@@ -1,0 +1,83 @@
+$register-box--background: #2e5286
+$register-box--color: #fff
+$register-button--background: #e6be1e
+$register-button--color: #fff
+
+
+$vw-context-enabled: true
+
+.register
+    background: $register-box--background
+    width: get-vw(256px)
+    margin: get-vw(30px) auto get-vw(10px)
+    color: $register-box--color
+    overflow: hidden
+    margin-bottom: get-vw(-40px)
+    z-index: 10
+
+    &:before
+        @extend .gradient-line--top
+        height: get-vw(6.3px)
+
+.register--date
+    padding: get-vw(30px) get-vw(9px) get-vw(16px)
+    text-align: center
+    text-transform: uppercase
+    font-family: $font-family
+    font-weight: 700
+    font-size: get-vw(46px)
+    line-height: 1
+
+    span
+        display: block
+        font-size: get-vw(20px)
+
+.register--button
+        background: $register-button--background
+        display: block
+        width: 80%
+        margin: 0px auto get-vw(20px)
+        color: $register-button--color
+        text-transform: uppercase
+        text-align: center
+        padding: get-vw(8px) 0px
+        font-size: get-vw(16px)
+        font-weight: 700
+        font-family: $font-family
+        border-radius: get-vw(6px)
+        transition: all linear 300ms
+
+        &:focus, &:hover
+            @extend .register--button
+
+        &:hover
+            transform: scale(1.03)
+
+
+$vw-context-enabled: false
+
+
+@media #{$media-query-medium}
+
+    .register
+        width: 100%
+        min-width: get-vw(228px)
+        margin: get-vw(30px) auto get-vw(10px)
+        margin-bottom: get-vw(-40px)
+        height: 234px
+
+        &:before
+            height: get-vw(6.3px)
+
+    .register--date
+        padding: get-vw(40px) get-vw(9px) get-vw(16px)
+        font-size: get-vw(60px)
+
+        span
+            font-size: get-vw(28px)
+
+    .register--button
+        margin: 0px auto get-vw(20px)
+        padding: get-vw(8px) 0px
+        font-size: get-vw(24px)
+        border-radius: get-vw(6px)
