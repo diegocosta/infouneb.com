@@ -134,7 +134,7 @@
   background: #e6be1e;
   display: none;
   width: 80%;
-  margin: 0px auto 6vw;
+  margin: 0px auto 12.5625vw;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -247,7 +247,11 @@
 
 .speakers--tab {
   width: 100%;
-  overflow: scroll; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none; }
+  .speakers--tab::-webkit-scrollbar {
+    display: none; }
 
 .speakers--tab--list {
   padding: 0px;
@@ -287,6 +291,10 @@
   .speakers--tab--list--link:hover, .speakers--tab--list--link:focus, .speakers--tab--list--link:active {
     color: #fff; }
 
+.speakers--content {
+  padding: 12.1875vw 0;
+  overflow: hidden; }
+
 @media (min-width: 40em) {
   .speakers--tab {
     overflow: hidden; }
@@ -295,8 +303,7 @@
     width: 300px;
     font-size: 23px; }
   .speakers--content {
-    padding: 69px 0px;
-    overflow: hidden; } }
+    padding: 69px 0px; } }
 
 .speaker {
   width: 80vw;
