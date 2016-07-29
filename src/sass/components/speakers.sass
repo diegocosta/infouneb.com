@@ -27,8 +27,12 @@ $vw-context-enabled: true
     float: left
 
     @each $item, $color in $speakers--tab--item--colors
+
         &:nth-child(#{$item}) .speakers--tab--list--link
             background: $color
+
+            &:hover
+                background: darken($color, 10%)
 
 
 .speakers--tab--list--link
@@ -39,7 +43,10 @@ $vw-context-enabled: true
     font-weight: 700
     font-size: get-vw(18px)
     text-align: center
+    transition: all linear 300ms
 
+    &:hover, &:focus, &:active
+        color: #fff
 
 
 $vw-context-enabled: false

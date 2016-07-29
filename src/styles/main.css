@@ -32,19 +32,19 @@
 .icon-menu:before {
   content: "\61"; }
 
-.gradient-line--to-right, .gradient-line--top:before, .container:before, .inscreva:before {
+.gradient-line--to-right, .gradient-line--top:before, .container:before, .register:before {
   background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
 
 .gradient-line--to-bottom, .gradient-line--chamada:before, .header--chamada:before, .header--chamada__direita:before {
   background: linear-gradient(to bottom, #e8be10 0%, #e8be10 20%, #38619e 20%, #38619e 40%, #351347 40%, #351347 60%, #963096 60%, #963096 80%, #c13030 80%, #c13030 100%); }
 
-.gradient-line--top:before, .container:before, .inscreva:before {
+.gradient-line--top:before, .container:before, .register:before {
   display: block;
   content: "";
   height: 2.1875vw; }
 
 @media (min-width: 40em) {
-  .gradient-line--top:before, .container:before, .inscreva:before {
+  .gradient-line--top:before, .container:before, .register:before {
     height: 7px; }
   .gradient-line--chamada:before, .header--chamada:before, .header--chamada__direita:before {
     display: block;
@@ -53,45 +53,6 @@
     height: 68px;
     float: left;
     margin-right: 10px; } }
-
-.navigation {
-  position: relative; }
-
-.navigation .networks,
-.navigation--pages {
-  display: none; }
-
-.navigation--button {
-  width: 25vw;
-  height: 25vw;
-  background: #e8be10;
-  border-radius: 3.125vw;
-  transform: rotate(45deg);
-  position: fixed;
-  top: -15.625vw;
-  right: 9.375vw; }
-
-.navigation--button:before {
-  transform: rotate(-45deg);
-  display: block;
-  font-size: 8.125vw;
-  color: #fff;
-  position: absolute;
-  bottom: 0px;
-  margin-left: 15vw;
-  margin-bottom: 1.875vw; }
-
-@media (min-width: 40em) {
-  .navigation--button {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    top: -50px;
-    right: 30px; }
-  .navigation--button:before {
-    font-size: 26px;
-    margin-left: 48px;
-    margin-bottom: 6px; } }
 
 .header {
   background: #38184b url(../images/bg-inicio.jpg);
@@ -141,66 +102,6 @@
     margin-top: 100px; }
     .header--chamada__direita {
       text-align: right; } }
-
-.inscreva {
-  background: #2e5286;
-  width: 80vw;
-  margin: 9.375vw auto 3.125vw;
-  color: #fff;
-  overflow: hidden;
-  margin-bottom: -12.5vw;
-  z-index: 10; }
-  .inscreva:before {
-    height: 1.96875vw; }
-
-.inscreva--data {
-  padding: 9.375vw 2.8125vw 5vw;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 14.375vw;
-  line-height: 1; }
-  .inscreva--data span {
-    display: block;
-    font-size: 6.25vw; }
-
-.inscreva--button, .inscreva--button:focus, .inscreva--button:hover {
-  background: #e6be1e;
-  display: block;
-  width: 80%;
-  margin: 0px auto 6.25vw;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 2.5vw 0px;
-  font-size: 5vw;
-  font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
-  border-radius: 1.875vw;
-  transition: all linear 300ms; }
-  .inscreva--button:hover {
-    transform: scale(1.1); }
-
-@media (min-width: 40em) {
-  .inscreva {
-    width: 100%;
-    min-width: 228px;
-    margin: 30px auto 10px;
-    margin-bottom: -40px;
-    height: 234px; }
-    .inscreva:before {
-      height: 6.3px; }
-  .inscreva--data {
-    padding: 40px 9px 16px;
-    font-size: 60px; }
-    .inscreva--data span {
-      font-size: 28px; }
-  .inscreva--button, .inscreva--button:focus, .inscreva--button:hover {
-    margin: 0px auto 20px;
-    padding: 8px 0px;
-    font-size: 24px;
-    border-radius: 6px; } }
 
 .about {
   background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat;
@@ -272,6 +173,66 @@
     display: none !important; } }
 
 /* organizado */
+.register {
+  background: #2e5286;
+  width: 80vw;
+  margin: 9.375vw auto 3.125vw;
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: -12.5vw;
+  z-index: 10; }
+  .register:before {
+    height: 1.96875vw; }
+
+.register--date {
+  padding: 9.375vw 2.8125vw 5vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14.375vw;
+  line-height: 1; }
+  .register--date span {
+    display: block;
+    font-size: 6.25vw; }
+
+.register--button, .register--button:focus, .register--button:hover {
+  background: #e6be1e;
+  display: block;
+  width: 80%;
+  margin: 0px auto 6.25vw;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2.5vw 0px;
+  font-size: 5vw;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 1.875vw;
+  transition: all linear 300ms; }
+  .register--button:hover {
+    transform: scale(1.03); }
+
+@media (min-width: 40em) {
+  .register {
+    width: 100%;
+    min-width: 228px;
+    margin: 30px auto 10px;
+    margin-bottom: -40px;
+    height: 234px; }
+    .register:before {
+      height: 6.3px; }
+  .register--date {
+    padding: 40px 9px 16px;
+    font-size: 60px; }
+    .register--date span {
+      font-size: 28px; }
+  .register--button, .register--button:focus, .register--button:hover {
+    margin: 0px auto 20px;
+    padding: 8px 0px;
+    font-size: 24px;
+    border-radius: 6px; } }
+
 .speakers {
   background: #483e78;
   font-family: "Open Sans", sans-serif; }
@@ -299,12 +260,20 @@
   float: left; }
   .speakers--tab--list--item:nth-child(1) .speakers--tab--list--link {
     background: #483e78; }
+    .speakers--tab--list--item:nth-child(1) .speakers--tab--list--link:hover {
+      background: #342d56; }
   .speakers--tab--list--item:nth-child(2) .speakers--tab--list--link {
     background: #556ba3; }
+    .speakers--tab--list--item:nth-child(2) .speakers--tab--list--link:hover {
+      background: #445581; }
   .speakers--tab--list--item:nth-child(3) .speakers--tab--list--link {
     background: #e6be1e; }
+    .speakers--tab--list--item:nth-child(3) .speakers--tab--list--link:hover {
+      background: #bc9b15; }
   .speakers--tab--list--item:nth-child(4) .speakers--tab--list--link {
     background: #363636; }
+    .speakers--tab--list--item:nth-child(4) .speakers--tab--list--link:hover {
+      background: #1d1d1d; }
 
 .speakers--tab--list--link {
   display: block;
@@ -313,7 +282,10 @@
   color: #fff;
   font-weight: 700;
   font-size: 5.625vw;
-  text-align: center; }
+  text-align: center;
+  transition: all linear 300ms; }
+  .speakers--tab--list--link:hover, .speakers--tab--list--link:focus, .speakers--tab--list--link:active {
+    color: #fff; }
 
 @media (min-width: 40em) {
   .speakers--tab {
