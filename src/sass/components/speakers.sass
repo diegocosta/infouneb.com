@@ -14,7 +14,12 @@ $vw-context-enabled: true
 
 .speakers--tab
     width: 100%
-    overflow: scroll
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    -ms-overflow-style: none
+
+    &::-webkit-scrollbar
+        display: none
 
 .speakers--tab--list
     padding: 0px
@@ -48,6 +53,10 @@ $vw-context-enabled: true
     &:hover, &:focus, &:active
         color: #fff
 
+.speakers--content
+    padding: get-vw(39px) 0
+    overflow: hidden
+
 
 $vw-context-enabled: false
 
@@ -63,4 +72,3 @@ $vw-context-enabled: false
 
     .speakers--content
         padding: get-vw(69px) get-vw(0px)
-        overflow: hidden
