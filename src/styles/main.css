@@ -32,19 +32,19 @@
 .icon-menu:before {
   content: "\61"; }
 
-.gradient-line--to-right, .gradient-line--top:before, .container:before, .register:before {
+.gradient-line--to-right, .gradient-line--top:before, .container:before, .register:before, .footer:before {
   background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
 
 .gradient-line--to-bottom, .gradient-line--chamada:before, .header--chamada:before, .header--chamada__direita:before {
   background: linear-gradient(to bottom, #e8be10 0%, #e8be10 20%, #38619e 20%, #38619e 40%, #351347 40%, #351347 60%, #963096 60%, #963096 80%, #c13030 80%, #c13030 100%); }
 
-.gradient-line--top:before, .container:before, .register:before {
+.gradient-line--top:before, .container:before, .register:before, .footer:before {
   display: block;
   content: "";
   height: 2.1875vw; }
 
 @media (min-width: 40em) {
-  .gradient-line--top:before, .container:before, .register:before {
+  .gradient-line--top:before, .container:before, .register:before, .footer:before {
     height: 7px; }
   .gradient-line--chamada:before, .header--chamada:before, .header--chamada__direita:before {
     display: block;
@@ -395,3 +395,8 @@
 
 .footer {
   background: #d7d7d7; }
+  .footer:before {
+    height: 1.96875vw; }
+
+.footer:before {
+  height: 6.3px; }
