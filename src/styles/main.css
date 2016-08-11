@@ -32,6 +32,12 @@
 .icon-menu:before {
   content: "\61"; }
 
+.icon-facebook:before {
+  content: "\62"; }
+
+.icon-twitter:before {
+  content: "\63"; }
+
 .gradient-line--to-right, .gradient-line--top:before, .container:before, .register:before, .footer:before {
   background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
 
@@ -401,9 +407,92 @@
     margin-top: -80px; } }
 
 .footer {
-  background: #d7d7d7; }
-  .footer:before {
-    height: 1.96875vw; }
+  background: #d7d7d7;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 3.4375vw;
+  text-transform: uppercase;
+  color: #726e6e; }
 
 .footer:before {
-  height: 6.3px; }
+  height: 1.96875vw; }
+
+.footer p {
+  padding: 6.25vw 6.25vw;
+  margin: 0px; }
+
+.footer--copyright {
+  border: 1px solid transparent;
+  background: #ebebeb; }
+
+.footer--copyright .row:before {
+  width: 92px;
+  height: 46px;
+  background: url(../images/logo-black.png);
+  display: block;
+  content: "";
+  margin: 3.125vw auto; }
+
+.footer--copyright p {
+  padding-top: 0px; }
+
+.footer--credits {
+  font-weight: 700; }
+
+.footer--credits a {
+  color: #726e6e;
+  border-bottom: 0.3125vw dotted #726e6e; }
+
+.footer--social-networks {
+  margin: 0px auto 3.125vw; }
+
+[class^="footer--social-networks--"],
+[class*=" footer--social-networks--"] {
+  border: 1px solid transparent;
+  color: #fff;
+  border-radius: 1.5625vw;
+  font-size: 6.25vw;
+  padding: 1.5625vw 3.125vw 0vw;
+  margin: 0 1.5625vw; }
+
+.footer--social-networks--twitter {
+  background: #4ad2f6; }
+  .footer--social-networks--twitter:hover, .footer--social-networks--twitter:focus {
+    color: #4ad2f6;
+    background: #fff; }
+
+.footer--social-networks--facebook {
+  background: #7190bc; }
+  .footer--social-networks--facebook:hover, .footer--social-networks--facebook:focus {
+    color: #7190bc;
+    background: #fff; }
+
+@media (min-width: 40em) {
+  .footer {
+    font-size: 11px; }
+  .footer:before {
+    height: 6.3px; }
+  .footer p {
+    padding: 20px 40px; }
+  .footer--copyright .row {
+    position: relative; }
+  .footer--copyright .row:before {
+    margin: 10px 0;
+    float: left; }
+  .footer--copyright p {
+    padding-top: 24px; }
+  .footer--credits p {
+    font-size: 14px; }
+  .footer--credits a {
+    border-bottom-width: 1px; }
+  .footer--social-networks {
+    margin: 0px auto 10px;
+    position: absolute;
+    top: 20px;
+    right: 0px; }
+  [class^="footer--social-networks--"],
+  [class*=" footer--social-networks--"] {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px 0px;
+    margin: 0 5px; } }

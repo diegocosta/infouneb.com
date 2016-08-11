@@ -2,14 +2,107 @@ $vw-context-enabled: true
 
 .footer
     background: #d7d7d7
+    font-family: $font-family
+    text-align: center
+    font-size: get-vw(11px)
+    text-transform: uppercase
+    color: #726e6e
 
-    &:before
-        @extend .gradient-line--top
-        height: get-vw(6.3px)
+.footer:before
+    @extend .gradient-line--top
+    height: get-vw(6.3px)
+
+.footer p
+    padding: get-vw(20px) get-vw(20px)
+    margin: 0px
+
+.footer--copyright
+    border: 1px solid transparent
+    background: #ebebeb
+
+.footer--copyright .row:before
+    width: 92px
+    height: 46px
+    background: url(../images/logo-black.png)
+    display: block
+    content: ""
+    margin: get-vw(10px) auto
+
+.footer--copyright p
+    padding-top: 0px
+
+.footer--credits
+    font-weight: 700
+
+.footer--credits a
+    color: #726e6e
+    border-bottom: get-vw(1px) dotted #726e6e
+
+.footer--social-networks
+    margin: 0px auto get-vw(10px)
+
+[class^="footer--social-networks--"],
+[class*=" footer--social-networks--"]
+    border: 1px solid transparent
+    color: #fff
+    border-radius: get-vw(5px)
+    font-size: get-vw(20px)
+    padding: get-vw(5px) get-vw(10px) get-vw(0px)
+    margin: 0 get-vw(5px)
+
+.footer--social-networks--twitter
+    background: #4ad2f6
+
+    &:hover, &:focus
+        color: #4ad2f6
+        background: #fff
+
+.footer--social-networks--facebook
+    background: #7190bc
+
+    &:hover, &:focus
+        color: #7190bc
+        background: #fff
 
 $vw-context-enabled: false
 
+@media #{$media-query-medium}
 
-.footer
-    &:before
+    .footer
+        font-size: get-vw(11px)
+
+    .footer:before
         height: get-vw(6.3px)
+
+    .footer p
+        padding: get-vw(20px) get-vw(40px)
+
+
+    .footer--copyright .row
+        position: relative
+
+    .footer--copyright .row:before
+        margin: get-vw(10px) 0
+        float: left
+
+    .footer--copyright p
+        padding-top: get-vw(24px)
+
+    .footer--credits p
+        font-size: get-vw(14px)
+
+    .footer--credits a
+        border-bottom-width: get-vw(1px)
+
+    .footer--social-networks
+        margin: 0px auto get-vw(10px)
+        position: absolute
+        top: 20px
+        right: 0px
+
+    [class^="footer--social-networks--"],
+    [class*=" footer--social-networks--"]
+        border-radius: get-vw(5px)
+        font-size: get-vw(20px)
+        padding: get-vw(5px) get-vw(10px) get-vw(0px)
+        margin: 0 get-vw(5px)
