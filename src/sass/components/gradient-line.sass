@@ -14,26 +14,40 @@ $sexta-cor: $cor-verde
 
 $vw-context-enabled: true
 
-.gradient-line--to-right
-  background: linear-gradient(to right, $primeira-cor 0%, $primeira-cor 14%, $segunda-cor 14%, $segunda-cor 24%, $segunda-cor 31%, $terceira-cor 31%, $terceira-cor 50%, $quarta-cor 50%, $quarta-cor 66%, $quinta-cor 66%, $quinta-cor 83%, $sexta-cor 83%, $sexta-cor 100%)
+
+.gradient-line--to-right-mobile
+    background: linear-gradient(to right, $primeira-cor 0%, $primeira-cor 14%, $segunda-cor 14%, $segunda-cor 24%, $segunda-cor 31%, $terceira-cor 31%, $terceira-cor 50%, $quarta-cor 50%, $quarta-cor 66%, $quinta-cor 66%, $quinta-cor 83%, $sexta-cor 83%, $sexta-cor 100%)
 
 .gradient-line--to-bottom
-  background: linear-gradient(to bottom, $cor-amarelo 0%, $cor-amarelo 20%, $cor-azul 20%, $cor-azul 40%, $cor-roxo 40%, $cor-roxo 60%, $cor-lilas 60%, $cor-lilas 80%, $cor-vermelho 80%, $cor-vermelho 100%)
+    background: linear-gradient(to bottom, $cor-amarelo 0%, $cor-amarelo 20%, $cor-azul 20%, $cor-azul 40%, $cor-roxo 40%, $cor-roxo 60%, $cor-lilas 60%, $cor-lilas 80%, $cor-vermelho 80%, $cor-vermelho 100%)
+
 
 .gradient-line--top:before
-  @extend .gradient-line--to-right
-  display: block
-  content: ""
-  height: get-vw(7px)
+    @extend .gradient-line--to-right-mobile
+    display: block
+    content: ""
+    height: get-vw(7px)
+
+.gradient-line--top-small:before
+    @extend .gradient-line--to-right-mobile
+    display: block
+    content: ""
+    height: get-vw(7px)
 
 .gradient-line--chamada:before
     @extend .gradient-line--to-bottom
+
+
 
 $vw-context-enabled: false
 
 @media #{$media-query-medium}
 
+    .gradient-line--to-right
+        background: linear-gradient(to right, $cor-vermelho 0%, $cor-vermelho 5%, $cor-lilas 5%, $cor-lilas 10%, $cor-roxo 10%, $cor-roxo 15%, $cor-azul 15%, $cor-azul 20%, $cor-amarelo 20%, $cor-amarelo 25%, $cor-vermelho 25%, $cor-vermelho 30%, $cor-lilas 30%, $cor-lilas 35%, $cor-roxo 35%, $cor-roxo 40%, $cor-azul 40%, $cor-azul 45%, $cor-amarelo 45%, $cor-amarelo 50%, $cor-vermelho 50%, $cor-vermelho 55%, $cor-lilas 55%, $cor-lilas 60%, $cor-roxo 60%, $cor-roxo 65%, $cor-azul 65%, $cor-azul 70%, $cor-amarelo 70%, $cor-amarelo 75%, $cor-vermelho 75%, $cor-vermelho 80%, $cor-lilas 80%, $cor-lilas 85%, $cor-roxo 85%, $cor-roxo 90%, $cor-azul 90%, $cor-azul 95%, $cor-amarelo 95%, $cor-amarelo 100%)
+
     .gradient-line--top:before
+        @extend .gradient-line--to-right
         height: get-vw(7px)
 
     .gradient-line--chamada:before

@@ -53,5 +53,38 @@
 
         $('.speakers .columns:last-child').addClass('end');
 
+        $('.location .location--map').each(function(){
+
+            var element = this;
+            var latlng = new google.maps.LatLng(0,0);
+            var canvas = new google.maps.Map(element, {
+                zoom: 16,
+                center: latlng,
+                scrollwheel: false,
+                streetViewControl: true,
+                labels: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            canvas.setCenter(latlng);
+
+
+            (new google.maps.Geocoder())
+                .geocode({ 'address': $(element).attr('data-address')}, function (results, status) {
+                    if(status === google.maps.GeocoderStatus.OK) {
+
+                        canvas.setCenter(results[0].geometry.location);
+
+                        new google.maps.Marker({
+                            map: canvas,
+                            position: results[0].geometry.location,
+                            icon: $(element).attr('data-marker')
+                        });
+                    }
+                    else
+                        console.log('Google Maps was not loaded: ', status);
+                });
+        });
+
     });
 })(jQuery);

@@ -38,19 +38,26 @@
 .icon-twitter:before {
   content: "\63"; }
 
-.gradient-line--to-right, .gradient-line--top:before, .container:before, .register:before, .footer:before {
+.gradient-line--to-right-mobile, .gradient-line--top:before, .container:before, .footer:before, .location:before, .gradient-line--top-small:before, .register:before {
   background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
 
 .gradient-line--to-bottom, .gradient-line--chamada:before, .header--chamada:before, .header--chamada__direita:before {
   background: linear-gradient(to bottom, #e8be10 0%, #e8be10 20%, #38619e 20%, #38619e 40%, #351347 40%, #351347 60%, #963096 60%, #963096 80%, #c13030 80%, #c13030 100%); }
 
-.gradient-line--top:before, .container:before, .register:before, .footer:before {
+.gradient-line--top:before, .container:before, .footer:before, .location:before {
+  display: block;
+  content: "";
+  height: 2.1875vw; }
+
+.gradient-line--top-small:before, .register:before {
   display: block;
   content: "";
   height: 2.1875vw; }
 
 @media (min-width: 40em) {
-  .gradient-line--top:before, .container:before, .register:before, .footer:before {
+  .gradient-line--to-right, .gradient-line--top:before, .container:before, .footer:before, .location:before {
+    background: linear-gradient(to right, #c13030 0%, #c13030 5%, #963096 5%, #963096 10%, #351347 10%, #351347 15%, #38619e 15%, #38619e 20%, #e8be10 20%, #e8be10 25%, #c13030 25%, #c13030 30%, #963096 30%, #963096 35%, #351347 35%, #351347 40%, #38619e 40%, #38619e 45%, #e8be10 45%, #e8be10 50%, #c13030 50%, #c13030 55%, #963096 55%, #963096 60%, #351347 60%, #351347 65%, #38619e 65%, #38619e 70%, #e8be10 70%, #e8be10 75%, #c13030 75%, #c13030 80%, #963096 80%, #963096 85%, #351347 85%, #351347 90%, #38619e 90%, #38619e 95%, #e8be10 95%, #e8be10 100%); }
+  .gradient-line--top:before, .container:before, .footer:before, .location:before {
     height: 7px; }
   .gradient-line--chamada:before, .header--chamada:before, .header--chamada__direita:before {
     display: block;
@@ -178,7 +185,6 @@
   .about--button-continue, .about--button-continue:focus {
     display: none !important; } }
 
-/* organizado */
 .register {
   background: #2e5286;
   width: 80vw;
@@ -496,3 +502,12 @@
     font-size: 20px;
     padding: 5px 10px 0px;
     margin: 0 5px; } }
+
+.location:before {
+  height: 6.3px; }
+
+.location--map {
+  background: #e7e7e7;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 550px; }
