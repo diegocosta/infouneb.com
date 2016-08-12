@@ -57,6 +57,7 @@
 
             var element = this;
             var latlng = new google.maps.LatLng(0,0);
+            var mapurl = "https://www.google.com.br/maps/place/Uneb+Cabula/@-12.9526104,-38.4618983,17z/";
             var canvas = new google.maps.Map(element, {
                 zoom: 16,
                 center: latlng,
@@ -74,15 +75,22 @@
 
                         canvas.setCenter(results[0].geometry.location);
 
-                        new google.maps.Marker({
+                        var marker = new google.maps.Marker({
                             map: canvas,
                             position: results[0].geometry.location,
-                            icon: $(element).attr('data-marker')
+                            icon: $(element).attr('data-marker'),
+                            animation:google.maps.Animation.DROP
+                        });
+
+
+                        google.maps.event.addListener(marker, 'click', function() {
+                            window.open(mapurl, '_blank');
                         });
                     }
                     else
                         console.log('O Google Maps não foi carregado: ', status);
                 });
+
         });
 
     });
