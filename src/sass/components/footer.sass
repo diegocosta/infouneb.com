@@ -38,6 +38,9 @@ $vw-context-enabled: true
     color: #726e6e
     border-bottom: get-vw(1px) dotted #726e6e
 
+    &:hover, &:focus
+        border-bottom-style: solid
+
 .footer--social-networks
     margin: 0px auto get-vw(10px)
 
@@ -49,6 +52,7 @@ $vw-context-enabled: true
     font-size: get-vw(20px)
     padding: get-vw(5px) get-vw(10px) get-vw(0px)
     margin: 0 get-vw(5px)
+    transition: all linear 100ms
 
 .footer--social-networks--twitter
     background: #4ad2f6

@@ -448,6 +448,8 @@
 .footer--credits a {
   color: #726e6e;
   border-bottom: 0.3125vw dotted #726e6e; }
+  .footer--credits a:hover, .footer--credits a:focus {
+    border-bottom-style: solid; }
 
 .footer--social-networks {
   margin: 0px auto 3.125vw; }
@@ -459,7 +461,8 @@
   border-radius: 1.5625vw;
   font-size: 6.25vw;
   padding: 1.5625vw 3.125vw 0vw;
-  margin: 0 1.5625vw; }
+  margin: 0 1.5625vw;
+  transition: all linear 100ms; }
 
 .footer--social-networks--twitter {
   background: #4ad2f6; }
