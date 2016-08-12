@@ -276,20 +276,12 @@
   float: left; }
   .speakers--tab--list--item:nth-child(1) .speakers--tab--list--link {
     background: #483e78; }
-    .speakers--tab--list--item:nth-child(1) .speakers--tab--list--link:hover {
-      background: #342d56; }
   .speakers--tab--list--item:nth-child(2) .speakers--tab--list--link {
     background: #556ba3; }
-    .speakers--tab--list--item:nth-child(2) .speakers--tab--list--link:hover {
-      background: #445581; }
   .speakers--tab--list--item:nth-child(3) .speakers--tab--list--link {
     background: #e6be1e; }
-    .speakers--tab--list--item:nth-child(3) .speakers--tab--list--link:hover {
-      background: #bc9b15; }
   .speakers--tab--list--item:nth-child(4) .speakers--tab--list--link {
     background: #363636; }
-    .speakers--tab--list--item:nth-child(4) .speakers--tab--list--link:hover {
-      background: #1d1d1d; }
 
 .speakers--tab--list--link {
   display: block;
@@ -301,7 +293,9 @@
   text-align: center;
   transition: all linear 300ms; }
   .speakers--tab--list--link:hover, .speakers--tab--list--link:focus, .speakers--tab--list--link:active {
-    color: #fff; }
+    color: #fff;
+    z-index: 999;
+    transform: scale(1.1); }
 
 .speakers--content {
   padding: 12.1875vw 0;
@@ -310,9 +304,13 @@
 @media (min-width: 40em) {
   .speakers--tab {
     overflow: hidden; }
+  .speakers--tab--list {
+    width: 100%; }
+  .speakers--tab--list--item {
+    width: 25%; }
   .speakers--tab--list--link {
     padding: 28px 0px;
-    width: 300px;
+    width: 100%;
     font-size: 23px; }
   .speakers--content {
     padding: 69px 0px; } }

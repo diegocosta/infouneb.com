@@ -36,9 +36,6 @@ $vw-context-enabled: true
         &:nth-child(#{$item}) .speakers--tab--list--link
             background: $color
 
-            &:hover
-                background: darken($color, 10%)
-
 
 .speakers--tab--list--link
     display: block
@@ -52,6 +49,8 @@ $vw-context-enabled: true
 
     &:hover, &:focus, &:active
         color: #fff
+        z-index: 999
+        transform: scale(1.1)
 
 .speakers--content
     padding: get-vw(39px) 0
@@ -65,9 +64,15 @@ $vw-context-enabled: false
     .speakers--tab
         overflow: hidden
 
+    .speakers--tab--list
+        width: 100%
+
+    .speakers--tab--list--item
+        width: 25%
+
     .speakers--tab--list--link
         padding: get-vw(28px) get-vw(0px)
-        width: 300px
+        width: 100%
         font-size: 23px
 
     .speakers--content
