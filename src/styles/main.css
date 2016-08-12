@@ -307,7 +307,8 @@
   .speakers--tab--list {
     width: 100%; }
   .speakers--tab--list--item {
-    width: 25%; }
+    width: 25%;
+    overflow: hidden; }
   .speakers--tab--list--link {
     padding: 28px 0px;
     width: 100%;
