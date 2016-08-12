@@ -68,7 +68,6 @@
 
             canvas.setCenter(latlng);
 
-
             (new google.maps.Geocoder())
                 .geocode({ 'address': $(element).attr('data-address')}, function (results, status) {
                     if(status === google.maps.GeocoderStatus.OK) {
@@ -82,7 +81,7 @@
                         });
                     }
                     else
-                        console.log('Google Maps was not loaded: ', status);
+                        console.log('O Google Maps não foi carregado: ', status);
                 });
         });
 
