@@ -1,12 +1,29 @@
-@import variables
-@import fonts
+$media-query-small-landscape: screen and (max-width: 39.9375em) and (orientation: landscape)
+$media-query-medium: screen and (min-width: 40em)
+$media-query-large: screen and (min-width: 64em)
 
-@import components/gradient-line
-@import components/container
+$font-family: "Open Sans", sans-serif
+
+$vw-viewport: 320
+$vw-context-enabled: true
+
+@function get-vw($font)
+  @if $vw-context-enabled
+    $vw-context: $vw-viewport * 0.01 * 1px
+
+    @return $font / $vw-context * 1vw
+
+  @return $font
+
+.container
+  @extend .gradient--top
+
+@import fonts
+@import gradient
 @import components/header
-@import components/about
 @import components/register
+@import components/about
 @import components/speakers
-@import components/speaker
-@import components/footer
+@import components/partners
 @import components/location
+@import components/footer

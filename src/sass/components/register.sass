@@ -1,22 +1,16 @@
-$register-box--background: #2e5286
-$register-box--color: #fff
-$register-button--background: #e6be1e
-$register-button--color: #fff
-
-
 $vw-context-enabled: true
 
 .register
-    background: $register-box--background
+    background: #2e5286
     width: get-vw(256px)
     margin: get-vw(30px) auto get-vw(10px)
-    color: $register-box--color
+    color: #fff
     overflow: hidden
     margin-bottom: get-vw(-40px)
     z-index: 10
 
     &:before
-        @extend .gradient-line--top-small
+        @extend .gradient--top-small
         height: get-vw(6.3px)
 
 .register--date
@@ -33,25 +27,25 @@ $vw-context-enabled: true
         font-size: get-vw(20px)
 
 .register--button
-        background: $register-button--background
-        display: block
-        width: 80%
-        margin: 0px auto get-vw(20px)
-        color: $register-button--color
-        text-transform: uppercase
-        text-align: center
-        padding: get-vw(8px) 0px
-        font-size: get-vw(16px)
-        font-weight: 700
-        font-family: $font-family
-        border-radius: get-vw(6px)
-        transition: all linear 300ms
+    background: #e6be1e
+    display: block
+    width: 80%
+    margin: 0px auto get-vw(20px)
+    color: #fff
+    text-transform: uppercase
+    text-align: center
+    padding: get-vw(8px) 0px
+    font-size: get-vw(16px)
+    font-weight: 700
+    font-family: $font-family
+    border-radius: get-vw(6px)
+    transition: all linear 300ms
 
-        &:focus, &:hover
-            @extend .register--button
+    &:focus, &:hover
+        @extend .register--button
 
-        &:hover
-            transform: scale(1.03)
+    &:hover
+        transform: scale(1.03)
 
 
 $vw-context-enabled: false
