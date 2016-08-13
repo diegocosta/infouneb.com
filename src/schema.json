@@ -1,0 +1,40 @@
+{
+    "@context": "http://www.schema.org",
+    "@type": "EducationEvent",
+    "name": "InfoUNEB",
+    "alternateName": "Semana de Tecnologia da Informação da Universidade do Estado da Bahia",
+    "url": "http://www.infouneb.com",
+    "description": "Existe muito mais no sucesso profissional do que o conhecimento técnico",
+    "startDate": "2016-10-19T07:00",
+    "endDate": "2016-10-22T07:00",
+    "image": "/images/logo.png",
+    "location": {
+        "@type": "Place",
+        "name": "Universidade do Estado da Bahia",
+        "sameAs": "http://uneb.br",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Silveira Martins, 2555, Cabula",
+            "addressLocality": "Salvador",
+            "addressRegion": "Bahia",
+            "postalCode": "41.150-000",
+            "addressCountry": "Brazil"
+        }
+    },
+    "offers": {
+        "@type": "Offer",
+        "description": "Comprar Ingresso",
+        "url": "https://www.doity.com.br",
+        "price": "10.00"
+    },
+    "performers": [
+        {
+            "@type":"Person",
+            "name":"Hello"
+        },
+        {
+            "@type": "Person",
+            "name": "John Doe"
+        }
+    ]
+}
