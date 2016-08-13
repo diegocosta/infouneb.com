@@ -38,7 +38,7 @@
 .icon-twitter:before {
   content: "\63"; }
 
-.gradient-line--to-right-mobile, .gradient-line--top:before, .container:before, .footer:before, .location:before, .gradient-line--top-small:before, .register:before, .location--info:before {
+.gradient-line--to-right-mobile, .gradient-line--top:before, .container:before, .footer:before, .location:before, .gradient-line--top-small:before, .register:before {
   background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
 
 .gradient-line--to-bottom, .gradient-line--chamada:before, .header--chamada:before, .header--chamada__direita:before {
@@ -49,7 +49,7 @@
   content: "";
   height: 2.1875vw; }
 
-.gradient-line--top-small:before, .register:before, .location--info:before {
+.gradient-line--top-small:before, .register:before {
   display: block;
   content: "";
   height: 2.1875vw; }
@@ -519,35 +519,8 @@
   border-radius: 4px;
   height: 93.75vw; }
 
-.location--info {
-  width: 80%;
-  margin: 0 auto;
-  position: absolute;
-  top: 10px;
-  left: 10%;
-  background: #fff;
-  padding-bottom: 6.25vw; }
-  .location--info:before {
-    height: 1.96875vw; }
-
-.location--info--info {
-  padding: 0px 6.25vw;
-  text-transform: uppercase;
-  color: #483e78;
-  font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  font-size: 12px; }
-
 @media (min-width: 40em) {
   .location:before {
     height: 6.3px; }
   .location--map {
-    height: 550px; }
-  .location--info {
-    width: 300px;
-    top: 100px;
-    left: 100px;
-    background: rgba(255, 255, 255, 0.8); }
-    .location--info:before {
-      height: 6.3px; } }
+    height: 550px; } }

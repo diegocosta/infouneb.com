@@ -13,29 +13,6 @@ $vw-context-enabled: true
     border-radius: 4px
     height: get-vw(300px)
 
-.location--info
-    width: 80%
-    margin: 0 auto
-    position: absolute
-    top: 10px
-    left: 10%
-    background: #fff
-    padding-bottom: get-vw(20px)
-
-    &:before
-        @extend .gradient-line--top-small
-        height: get-vw(6.3px)
-
-
-.location--info--info
-    padding: 0px get-vw(20px)
-    text-transform: uppercase
-    color: #483e78
-    font-weight: 700
-    font-family: $font-family
-    margin: 0
-    font-size: 12px
-
 $vw-context-enabled: false
 
 @media #{$media-query-medium}
@@ -45,12 +22,3 @@ $vw-context-enabled: false
 
     .location--map
         height: get-vw(550px)
-
-    .location--info
-        width: 300px
-        top: 100px
-        left: 100px
-        background: rgba(255,255,255,0.8)
-
-        &:before
-            height: get-vw(6.3px)
