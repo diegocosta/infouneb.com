@@ -80,6 +80,8 @@
   display: block;
   background: url(../images/logo.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 70vw;
   height: 35vw;
   margin: auto; }
@@ -104,7 +106,7 @@
     margin: 100px 0px; }
   .header--logo--link {
     width: 616px;
-    height: 308px; }
+    height: 270px; }
   .header--meta {
     margin: 40px 0px 0px; }
   .header--chamada, .header--chamada__direita {
