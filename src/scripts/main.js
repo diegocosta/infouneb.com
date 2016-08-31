@@ -91,6 +91,9 @@
                         console.log('O Google Maps não foi carregado: ', status);
                 });
 
+                $('.location--text').on('click', function(){
+                    window.open(mapurl, '_blank');
+                });
         });
 
     });

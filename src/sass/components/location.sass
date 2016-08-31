@@ -2,6 +2,7 @@ $vw-context-enabled: true
 
 .location
     position: relative
+    overflow: hidden
 
 .location:before
     @extend .gradient--top
@@ -14,6 +15,21 @@ $vw-context-enabled: true
     border-radius: 4px
     height: get-vw(300px)
 
+.location--text
+    position: absolute
+    bottom: get-vw(30px)
+    font-size: get-vw(14px)
+    color: #483e78
+    background: rgba(255,255,255,0.8)
+    width: get-vw(200px)
+    left: 50%
+    margin-left: get-vw(-150px)
+    padding: get-vw(10px)
+
+    p
+        margin: 0
+        line-height: 1
+
 $vw-context-enabled: false
 
 @media #{$media-query-medium}
@@ -23,3 +39,18 @@ $vw-context-enabled: false
 
     .location--map
         height: get-vw(550px)
+
+    .location--text
+        bottom: get-vw(-100px)
+        font-size: get-vw(16px)
+        transition: all 0.2s linear
+        padding: get-vw(20px)
+        width: get-vw(300px)
+        margin-left: get-vw(-150px)
+        cursor: pointer
+
+
+    .location:hover
+        .location--text
+            bottom: get-vw(100px)
+
