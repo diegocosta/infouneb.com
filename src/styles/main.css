@@ -38,6 +38,9 @@
 .icon-twitter:before {
   content: "\63"; }
 
+.icon-instagram:before {
+  content: "\64"; }
+
 .gradient--to-right-mobile, .gradient--top:before, .container:before, .partners:before, .location:before, .footer:before, .gradient--top-small:before, .register:before {
   background: linear-gradient(to right, #351347 0%, #351347 14%, #38619e 14%, #38619e 24%, #38619e 31%, #963096 31%, #963096 50%, #c13030 50%, #c13030 66%, #e8be10 66%, #e8be10 83%, #389347 83%, #389347 100%); }
 
@@ -150,7 +153,7 @@
   text-transform: uppercase;
   text-align: center;
   padding: 2.5vw 0px;
-  font-size: 5vw;
+  font-size: 4.375vw;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   border-radius: 1.875vw;
@@ -175,7 +178,7 @@
   .register--button, .register--button:focus, .register--button:hover {
     margin: 0px auto 20px;
     padding: 8px 0px;
-    font-size: 24px;
+    font-size: 22px;
     border-radius: 6px; } }
 
 .about {
@@ -323,12 +326,13 @@
   margin: 0 auto;
   font-family: "Open Sans", sans-serif; }
 
-.speaker--date {
+.speaker--type {
   color: #fff;
   font-weight: 700;
   padding: 0.9375vw;
   display: block;
-  font-size: 5.625vw; }
+  font-size: 5.625vw;
+  text-transform: uppercase; }
 
 .speaker--photo {
   display: none; }
@@ -378,7 +382,7 @@
     width: 100%;
     position: relative;
     margin-bottom: 37px; }
-  .speaker--date {
+  .speaker--type {
     padding: 3px 8px;
     font-size: 18px;
     background: #963494;
@@ -404,7 +408,7 @@
       min-height: 76px; } }
 
 @media (min-width: 64em) {
-  .speaker--date {
+  .speaker--type {
     margin-top: -5px;
     margin-left: -10px; }
   .speaker--meta {
@@ -421,7 +425,8 @@
   height: 6.3px; }
 
 .location {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .location:before {
   height: 1.96875vw; }
@@ -432,11 +437,35 @@
   border-radius: 4px;
   height: 93.75vw; }
 
+.location--text {
+  position: absolute;
+  bottom: 9.375vw;
+  font-size: 4.375vw;
+  color: #483e78;
+  background: rgba(255, 255, 255, 0.8);
+  width: 62.5vw;
+  left: 50%;
+  margin-left: -46.875vw;
+  padding: 3.125vw; }
+  .location--text p {
+    margin: 0;
+    line-height: 1; }
+
 @media (min-width: 40em) {
   .location:before {
     height: 6.3px; }
   .location--map {
-    height: 550px; } }
+    height: 550px; }
+  .location--text {
+    bottom: -100px;
+    font-size: 16px;
+    transition: all 0.2s linear;
+    padding: 20px;
+    width: 300px;
+    margin-left: -150px;
+    cursor: pointer; }
+  .location:hover .location--text {
+    bottom: 100px; } }
 
 .footer {
   background: #d7d7d7;
@@ -500,6 +529,12 @@
   background: #7190bc; }
   .footer--social-networks--facebook:hover, .footer--social-networks--facebook:focus {
     color: #7190bc;
+    background: #fff; }
+
+.footer--social-networks--instagram {
+  background: #003B6F; }
+  .footer--social-networks--instagram:hover, .footer--social-networks--instagram:focus {
+    color: #003B6F;
     background: #fff; }
 
 @media (min-width: 40em) {
