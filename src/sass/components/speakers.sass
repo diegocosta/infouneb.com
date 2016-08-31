@@ -85,12 +85,13 @@ $vw-context-enabled: true
     margin: 0 auto
     font-family: $font-family
 
-.speaker--date
+.speaker--type
     color: #fff
     font-weight: 700
     padding: get-vw(3px)
     display: block
     font-size: get-vw(18px)
+    text-transform: uppercase
 
 .speaker--photo
     display: none
@@ -149,7 +150,7 @@ $vw-context-enabled: false
         position: relative
         margin-bottom: get-vw(37px)
 
-    .speaker--date
+    .speaker--type
         padding: get-vw(3px) get-vw(8px)
         font-size: get-vw(18px)
 
@@ -187,7 +188,7 @@ $vw-context-enabled: false
 
 @media #{$media-query-large}
 
-    .speaker--date
+    .speaker--type
         margin-top: get-vw(-5px)
         margin-left: get-vw(-10px)
 
