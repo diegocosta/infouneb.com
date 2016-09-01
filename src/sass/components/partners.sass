@@ -1,7 +1,47 @@
 .partners
-    height: 300px
     background: #1c0928
+    padding-bottom: 50px
 
 .partners:before
     @extend .gradient--top
     height: get-vw(6.3px)
+
+.partners--title
+	color: #fff
+	text-align: center
+	display: block
+	font-weight: 900
+	font-family: $font-family
+	font-size: 37px
+	text-transform: uppercase
+	font-style: italic
+	margin: 20px 0
+	text-shadow: 2px 1px 0px #483e78
+
+.partner
+	background: #fff
+	margin: 16px auto
+	padding: 20px
+	display: block
+	transition: all 0.25s linear
+
+.partner:hover
+	transform: scale(1.1)
+
+.partner-logo 
+	margin: 10px auto
+	display: block
+
+.partner--title,
+.partner--type
+	text-align: center
+	text-transform: uppercase
+	font-family: $font-family
+	font-weight: 900
+	font-size: 14px
+
+.partner--title
+	color: #351347
+
+.partner--type
+	color: #666
