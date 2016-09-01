@@ -187,7 +187,7 @@
   padding: 18.75vw 6.25vw 0; }
 
 .about--chamada {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 900;
   font-size: 4.375vw;
   color: #fff;
@@ -201,7 +201,7 @@
     margin-bottom: 3.125vw; }
 
 .about--texto {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 4.375vw;
   color: #fff;
@@ -221,6 +221,23 @@
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   border-radius: 1.875vw; }
+
+.about-maratona-projetos {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  padding: 6.25vw;
+  font-weight: 400;
+  font-size: 4.375vw;
+  text-align: justify; }
+
+.about-maratona-projetos--title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 5.3125vw;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.8125vw; }
 
 @media (min-width: 40em) {
   .about {
@@ -248,7 +265,14 @@
     font-size: 14px;
     padding: 0px 60px; }
   .about--button-continue, .about--button-continue:focus {
-    display: none !important; } }
+    display: none !important; }
+  .about-maratona-projetos {
+    padding: 20px;
+    font-size: 14px; }
+  .about-maratona-projetos--title {
+    font-size: 22px;
+    margin-bottom: 9px;
+    text-align: left; } }
 
 .speakers {
   background: #483e78;
@@ -532,9 +556,9 @@
     background: #fff; }
 
 .footer--social-networks--instagram {
-  background: #003B6F; }
+  background: #4658ac; }
   .footer--social-networks--instagram:hover, .footer--social-networks--instagram:focus {
-    color: #003B6F;
+    color: #4658ac;
     background: #fff; }
 
 @media (min-width: 40em) {

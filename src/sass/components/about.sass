@@ -6,7 +6,7 @@ $vw-context-enabled: true
     padding: get-vw(60px) get-vw(20px) 0
 
 .about--chamada
-    font-family: 'Open Sans', sans-serif
+    font-family: $font-family
     font-weight: 900
     font-size: get-vw(14px)
     color: #fff
@@ -21,7 +21,7 @@ $vw-context-enabled: true
         margin-bottom: get-vw(10px)
 
 .about--texto
-    font-family: 'Open Sans', sans-serif
+    font-family: $font-family
     font-weight: 400
     font-size: get-vw(14px)
     color: #fff
@@ -44,6 +44,23 @@ $vw-context-enabled: true
 
     &:focus
         @extend .about--button-continue
+
+.about-maratona-projetos 
+    color: #fff
+    font-family: $font-family
+    padding: get-vw(20px)
+    font-weight: 400
+    font-size: get-vw(14px)
+    text-align: justify
+
+.about-maratona-projetos--title 
+    font-family: $font-family
+    font-weight: 900;
+    font-size: get-vw(17px);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase
+    margin-bottom: get-vw(9px)
 
 $vw-context-enabled: false
 
@@ -81,3 +98,12 @@ $vw-context-enabled: false
 
     .about--button-continue
         display: none !important
+    
+    .about-maratona-projetos 
+        padding: get-vw(20px)
+        font-size: get-vw(14px)
+
+    .about-maratona-projetos--title 
+        font-size: get-vw(22px);
+        margin-bottom: get-vw(9px)
+        text-align: left
