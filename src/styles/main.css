@@ -401,6 +401,9 @@
     vertical-align: middle;
     min-height: 23.75vw; }
 
+[data-tab-content-for="2"] .speaker--title {
+  background: #4658ac; }
+
 @media (min-width: 40em) {
   .speaker {
     width: 100%;
