@@ -528,11 +528,16 @@
     font-size: 16px;
     transition: all 0.2s linear;
     padding: 20px;
-    width: 300px;
-    margin-left: -150px;
-    cursor: pointer; }
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    cursor: pointer;
+    text-align: center; }
+    .location--text strong {
+      margin: 5px 0;
+      display: block; }
   .location:hover .location--text {
-    bottom: 100px; } }
+    bottom: 0; } }
 
 .footer {
   background: #d7d7d7;
