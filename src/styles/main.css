@@ -446,10 +446,10 @@
 
 .partners {
   background: #1c0928;
-  padding-bottom: 50px; }
+  padding-bottom: 15.625vw; }
 
 .partners:before {
-  height: 6.3px; }
+  height: 1.96875vw; }
 
 .partners--title {
   color: #fff;
@@ -457,16 +457,15 @@
   display: block;
   font-weight: 900;
   font-family: "Open Sans", sans-serif;
-  font-size: 37px;
+  font-size: 6.25vw;
   text-transform: uppercase;
-  font-style: italic;
-  margin: 20px 0;
-  text-shadow: 2px 1px 0px #483e78; }
+  margin: 6.25vw 0;
+  text-shadow: 0.625vw 0.3125vw 0px #483e78; }
 
 .partner {
   background: #fff;
-  margin: 16px auto;
-  padding: 20px;
+  margin: 3.125vw auto;
+  padding: 6.25vw 3.125vw;
   display: block;
   transition: all 0.25s linear; }
 
@@ -474,7 +473,7 @@
   transform: scale(1.1); }
 
 .partner-logo {
-  margin: 10px auto;
+  margin: 3.125vw auto;
   display: block; }
 
 .partner--title,
@@ -483,13 +482,31 @@
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
-  font-size: 14px; }
+  font-size: 3.75vw; }
 
 .partner--title {
   color: #351347; }
 
 .partner--type {
   color: #666; }
+
+@media (min-width: 40em) {
+  .partners {
+    padding-bottom: 50px; }
+  .partners:before {
+    height: 6.3px; }
+  .partners--title {
+    font-size: 30px;
+    margin: 20px 0;
+    text-shadow: 2px 1px 0px #483e78; }
+  .partner {
+    margin: 16px auto;
+    padding: 20px; }
+  .partner-logo {
+    margin: 10px auto; }
+  .partner--title,
+  .partner--type {
+    font-size: 14px; } }
 
 .location {
   position: relative;
