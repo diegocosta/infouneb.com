@@ -74,6 +74,48 @@ $vw-context-enabled: false
         height: 720px
 
         > .row
+            margin-top: 100px
+
+        > .row, > .row .columns
+            position: relative
+
+    .about--chamada
+        font-size: get-vw(24px)
+        text-align: left
+
+        &:after
+            height: get-vw(10px)
+            margin-bottom: get-vw(10px)
+            background-position: top left
+            position: absolute
+            top: -20px
+
+    .about--texto
+        font-size: get-vw(14px)
+
+    .about--button-continue
+        display: none !important
+
+    .about-maratona-projetos
+        padding: get-vw(20px)
+        font-size: get-vw(14px)
+
+    .about-maratona-projetos--title
+        font-size: get-vw(22px)
+        margin-bottom: get-vw(9px)
+        text-align: left
+
+
+@media #{$media-query-large}
+
+    .about
+        background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat
+        padding: get-vw(60px) get-vw(20px) 0
+        background-position: top center
+        background-size: cover
+        height: 720px
+
+        > .row
             margin-top: 168px
 
         > .row, > .row .columns
@@ -105,6 +147,6 @@ $vw-context-enabled: false
         font-size: get-vw(14px)
 
     .about-maratona-projetos--title
-        font-size: get-vw(22px);
+        font-size: get-vw(22px)
         margin-bottom: get-vw(9px)
         text-align: left
