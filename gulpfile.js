@@ -14,11 +14,13 @@
 	gulp.task('sass', task('sass', 'src/sass/main.sass', 'src/styles'));
 
 	// compress
-	gulp.task('imagemin', task('imagemin', 'src/images/**/*', 'images'));
+	gulp.task('imagemin', task('imagemin', 'src/images/**/*', 'dist/images'));
+    gulp.task('htmlmin', task('htmlmin', 'dist/*', 'dist'));
 
 	// build
-	gulp.task('usemin', task('usemin', 'src/*.html', 'views/'));
-	gulp.task('copy', task('copy', [{ src: 'src/fonts/*', dest: 'fonts' }, { src: 'src/others/*', dest: 'others' }]));
+	gulp.task('usemin', task('usemin', 'src/*.html', 'dist/'));
+	gulp.task('copy', task('copy', [{ src: 'src/fonts/*', dest: 'dist/fonts' }, { src: 'src/others/*', dest: 'dist/others' }]));
+    gulp.task('build', ['usemin', 'imagemin', 'copy'])
 
 	function task(name) {
 		var args = Array.prototype.slice.call(arguments, 1);
