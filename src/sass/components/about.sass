@@ -1,8 +1,9 @@
 $vw-context-enabled: true
 
 .about
-    background: #333 url(../images/bg-sobre-o-evento.jpg) no-repeat
+    background: #333 url(../images/bg-sobre-o-evento-2.jpg) no-repeat
     background-position: top right
+    background-size: cover
     padding: get-vw(60px) get-vw(20px) 0
 
 .about--chamada
@@ -45,7 +46,7 @@ $vw-context-enabled: true
     &:focus
         @extend .about--button-continue
 
-.about-maratona-projetos 
+.about-maratona-projetos
     color: #fff
     font-family: $font-family
     padding: get-vw(20px)
@@ -53,7 +54,7 @@ $vw-context-enabled: true
     font-size: get-vw(14px)
     text-align: justify
 
-.about-maratona-projetos--title 
+.about-maratona-projetos--title
     font-family: $font-family
     font-weight: 900;
     font-size: get-vw(17px);
@@ -69,7 +70,7 @@ $vw-context-enabled: false
     .about
         padding: get-vw(60px) get-vw(20px) 0
         background-position: top center
-        background-size: contain
+        background-size: cover
         height: 720px
 
         > .row
@@ -98,12 +99,12 @@ $vw-context-enabled: false
 
     .about--button-continue
         display: none !important
-    
-    .about-maratona-projetos 
+
+    .about-maratona-projetos
         padding: get-vw(20px)
         font-size: get-vw(14px)
 
-    .about-maratona-projetos--title 
+    .about-maratona-projetos--title
         font-size: get-vw(22px);
         margin-bottom: get-vw(9px)
         text-align: left
