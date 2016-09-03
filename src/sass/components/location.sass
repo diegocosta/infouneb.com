@@ -13,16 +13,16 @@ $vw-context-enabled: true
 
 .location--title
     position: absolute
-    top: 70px
+    top: get-vw(12px)
     right: 0
     background: #38619e
     font-family: $font-family
     text-transform: uppercase
     color: #fff
     font-weight: 900
-    padding: 10px 20px
-    font-size: 22px
-    box-shadow: 3px 3px 0px #1f385f
+    padding: get-vw(10px) get-vw(20px)
+    font-size: get-vw(16px)
+    box-shadow: get-vw(3px) get-vw(3px) get-vw(0px) #1f385f
     z-index: 99
 
 .location--map
@@ -53,6 +53,20 @@ $vw-context-enabled: false
     .location:before
         height: get-vw(6.3px)
 
+    .location--title
+        position: absolute
+        top: get-vw(70px)
+        right: 0
+        background: #38619e
+        font-family: $font-family
+        text-transform: uppercase
+        color: #fff
+        font-weight: 900
+        padding: get-vw(10px) get-vw(20px)
+        font-size: get-vw(22px)
+        box-shadow: get-vw(3px) get-vw(3px) get-vw(0px) #1f385f
+        z-index: 99
+
     .location--map
         height: get-vw(550px)
 
@@ -66,11 +80,6 @@ $vw-context-enabled: false
         left: 0
         cursor: pointer
         text-align: center
-
-        strong
-            margin: 5px 0
-            display: block
-
 
     .location:hover
         .location--text
