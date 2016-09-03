@@ -1,75 +1,76 @@
 $vw-context-enabled: true
 
 .partners
-    background: #1c0928
+    background: #483e78
     padding-bottom: get-vw(50px)
 
-.partners:before
-    @extend .gradient--top
-    height: get-vw(6.3px)
-
 .partners--title
-	color: #fff
-	text-align: center
-	display: block
-	font-weight: 900
-	font-family: $font-family
-	font-size: get-vw(20px)
-	text-transform: uppercase
-	margin: get-vw(20px) 0
-	text-shadow: get-vw(2px) get-vw(1px) 0px #483e78
+    background: $cor-amarelo
+    display: inline-block
+    padding: get-vw(5px) get-vw(10px)
+    color: #fff
+    font-family: $font-family
+    text-transform: uppercase
+    font-weight: bold
+    font-weight: 900
+    margin: get-vw(30px) get-vw(15px) get-vw(5px)
+    box-shadow: get-vw(3px) get-vw(3px) get-vw(0px) #92780b
+    font-size: get-vw(20px)
 
 .partner
-	background: #fff
-	margin: get-vw(10px) auto
-	padding: get-vw(20px) get-vw(10px)
-	display: block
-	transition: all 0.25s linear
+    background: #fff
+    display: block
+    margin: get-vw(10px) auto
+    padding: get-vw(20px) get-vw(10px)
+    transition: all 0.25s linear
+    box-shadow: 3px 3px 0 #2b2548
 
 .partner:hover
-	transform: scale(1.1)
+    transform: scale(1.1)
 
-.partner-logo 
-	margin: get-vw(10px) auto
-	display: block
+.partner-logo
+    margin: get-vw(10px) auto
+    display: block
 
 .partner--title,
 .partner--type
-	text-align: center
-	text-transform: uppercase
-	font-family: $font-family
-	font-weight: 900
-	font-size: get-vw(12px)
+    text-align: center
+    text-transform: uppercase
+    font-family: $font-family
+    font-weight: 900
+    font-size: get-vw(12px)
 
 .partner--title
-	color: #351347
+    color: #351347
 
 .partner--type
-	color: #666
+    color: #666
 
 
 $vw-context-enabled: false
 
 @media #{$media-query-medium}
 
-	.partners
-	    padding-bottom: get-vw(50px)
+    .partners
+        padding-bottom: get-vw(50px)
 
-	.partners:before
-	    height: get-vw(6.3px)
+    .partners:before
+        height: get-vw(6.3px)
 
-	.partners--title
-		font-size: get-vw(30px)
-		margin: get-vw(20px) 0
-		text-shadow: get-vw(2px) get-vw(1px) 0px #483e78
+    .partners--title
 
-	.partner
-		margin: get-vw(16px) auto
-		padding: get-vw(20px)
+        padding: get-vw(10px) get-vw(20px)
+        margin: get-vw(30px) get-vw(15px) get-vw(5px)
+        box-shadow: get-vw(3px) get-vw(3px) get-vw(0px) #92780b
+        font-size: get-vw(22px)
 
-	.partner-logo 
-		margin: get-vw(10px) auto
+    .partner
+        margin: get-vw(16px) auto
+        padding: get-vw(20px)
 
-	.partner--title,
-	.partner--type
-		font-size: get-vw(14px)
+    .partner-logo
+        margin: get-vw(10px) auto
+
+    .partner--title,
+    .partner--type
+        font-size: get-vw(14px)
