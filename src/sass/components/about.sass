@@ -65,9 +65,41 @@ $vw-context-enabled: true
     text-align: center
     text-transform: uppercase
     margin-bottom: get-vw(9px)
+    background: #963494
+    box-shadow: 3px 3px 0 #642363
+    display: inline-block
+    padding: 0px 10px
+    position: relative
+
+    &:before
+        line-height: 37px
+        float: left
+        width: 30px
+        height: 30px
+        display: block
 
 .about-maratona-projetos p
     text-indent: 30px
+
+.about-maratona-projetos--schedule
+    padding: 0px
+    margin: 0px
+
+.about-maratona-projetos--schedule--item
+    padding: 0px
+    margin: 0px
+    list-style: none
+
+.about-maratona-projetos--schedule--item--time
+    font-weight: 900
+    background: #642363
+    padding: 0px 4px
+    display: inline-block
+
+    &:before
+        line-height: 24px
+        margin-right: 4px
+        float: left
 
 $vw-context-enabled: false
 
