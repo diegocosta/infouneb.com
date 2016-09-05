@@ -39,8 +39,8 @@ $vw-context-enabled: true
     font-size: get-vw(14px)
     font-weight: 700
     font-family: $font-family
-    border-radius: get-vw(6px)
     transition: all linear 300ms
+    box-shadow: 0px get-vw(3px) 0px #6d5907
 
     &:focus, &:hover
         @extend .register--button
@@ -54,6 +54,7 @@ $vw-context-enabled: true
         pointer-events: none
         color: #fff
         background-color: $cor-azul
+        box-shadow: none
 
         &:hover
             transform: none
@@ -84,4 +85,7 @@ $vw-context-enabled: false
         margin: 0px auto get-vw(20px)
         padding: get-vw(8px) 0px
         font-size: get-vw(22px)
-        border-radius: get-vw(6px)
+        box-shadow: 0px get-vw(3px) 0px #6d5907
+
+        &__soon
+            box-shadow: none

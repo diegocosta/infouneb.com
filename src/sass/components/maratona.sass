@@ -1,0 +1,103 @@
+$vw-context-enabled: true
+
+.about-maratona-projetos
+    color: #fff
+    font-family: $font-family
+    padding: get-vw(20px)
+    font-weight: 400
+    font-size: get-vw(14px)
+    text-align: justify
+
+    .text-centered
+        font-weight: 900
+
+.about-maratona-projetos--title
+    font-family: $font-family
+    font-weight: 900
+    font-size: get-vw(16px)
+    color: #fff
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: get-vw(9px)
+    background: #963494
+    box-shadow: get-vw(3px) get-vw(3px) 0 #642363
+    display: inline-block
+    padding: 0px get-vw(10px)
+    position: relative
+    line-height: 2.5
+
+    &:before
+        line-height: get-vw(43px)
+        float: left
+        width: get-vw(30px)
+        height: get-vw(30px)
+        display: block
+
+.about-maratona-projetos p
+    text-indent: get-vw(30px)
+
+.about-maratona-projetos--schedule
+    padding: 0px
+    margin: 0px
+
+.about-maratona-projetos--schedule--item
+    padding: 0px
+    margin: 0px
+    list-style: none
+    margin-bottom: get-vw(5px)
+
+.about-maratona-projetos--schedule--item--time
+    font-weight: 900
+    background: #642363
+    padding: 0px get-vw(4px)
+    display: inline-block
+
+    &:before
+        line-height: get-vw(24px)
+        margin-right: get-vw(4px)
+        float: left
+
+$vw-context-enabled: false
+
+@media #{$media-query-medium}
+
+    .about-maratona-projetos
+        padding: get-vw(20px)
+        font-size: get-vw(14px)
+
+    .about-maratona-projetos p
+        text-indent: get-vw(30px)
+
+    .about-maratona-projetos--title
+        font-size: get-vw(16px)
+        margin-bottom: get-vw(9px)
+        box-shadow: get-vw(3px) get-vw(3px) 0 #642363
+        padding: 0px get-vw(10px)
+        line-height: 1.5
+
+        &:before
+            line-height: get-vw(38px)
+            width: get-vw(30px)
+            height: get-vw(30px)
+
+    .about-maratona-projetos--schedule--item
+        margin-bottom: get-vw(5px)
+
+    .about-maratona-projetos--schedule--item--time
+        padding: 0px get-vw(4px)
+
+        &:before
+            line-height: get-vw(24px)
+            margin-right: get-vw(4px)
+
+
+@media #{$media-query-large}
+
+    .about-maratona-projetos
+        padding: get-vw(20px)
+        font-size: get-vw(14px)
+
+    .about-maratona-projetos--title
+        font-size: get-vw(22px)
+        margin-bottom: get-vw(9px)
+        text-align: left
