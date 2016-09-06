@@ -1,2 +1,2 @@
 #!/bin/sh
-git subtree push --prefix dist infouneb.com gh-pages
+git subtree push --prefix dist git@github.com:infouneb/infouneb.com.git gh-pages
