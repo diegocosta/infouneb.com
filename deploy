@@ -1,2 +1,5 @@
 #!/bin/sh
-git subtree push --prefix dist git@github.com:infouneb/infouneb.com.git gh-pages
+gulp build && gulp htmlmin
+git add dist/*
+git commit -m "Build by @diegoscosta on `date +'%Y-%m-%d %H:%M:%S'`";
+#git subtree push --prefix dist git@github.com:infouneb/infouneb.com.git gh-pages
