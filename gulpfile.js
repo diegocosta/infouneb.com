@@ -21,13 +21,13 @@
 	gulp.task('usemin', task('usemin', 'src/*.html', 'dist/'));
 	gulp.task('copy', task('copy', [{ src: 'src/fonts/*', dest: 'dist/fonts' }, { src: 'src/others/*', dest: 'dist/others' }]));
     gulp.task('build', ['usemin', 'imagemin', 'copy'])
-    
+
     // deploy
     gulp.task('deploy', plugins.shell.task([
     	'gulp build',
     	'gulp htmlmin',
     	'git add dist/*',
-    	'git commit -m "Build by @diegoscosta on ' + (new Date()).toGMTString() + '"',
+    	'git commit -m "Publicado no @infouneb por @diegoscosta em ' + (new Date()).toGMTString() + '"',
     	'git push origin gh-pages',
     	'git subtree push --prefix dist git@github.com:infouneb/infouneb.com.git gh-pages'
     ]));
