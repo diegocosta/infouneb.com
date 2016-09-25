@@ -1,0 +1,84 @@
+$vw-context-enabled: true
+
+.infosaude
+    background: url(../images/infosaude2-2.jpg) no-repeat
+    background-position: top left
+    background-size: cover
+    padding: get-vw(60px) get-vw(20px)
+
+
+.infosaude--title
+    background: #38619e
+    display: inline-block
+    padding: get-vw(5px) get-vw(10px)
+    color: #fff
+    font-family: $font-family
+    text-transform: uppercase
+    font-weight: bold
+    font-weight: 900
+    margin: 0 0 get-vw(30px)
+    box-shadow: get-vw(3px) get-vw(3px) get-vw(0px) #1f385f
+    font-size: get-vw(20px)
+
+.infosaude--description
+    font-family: $font-family
+    font-weight: 600
+    font-size: get-vw(14px)
+    color: #1f385f
+    text-align: justify
+
+    p
+        text-indent: 30px
+
+.infosaude--programacao
+    border: 0
+
+    tbody
+        border: 0
+
+.infosaude-programacao--header
+    background: rgba(79, 125, 176, 0.8)
+    text-transform: uppercase
+    color: #fff
+    text-align: center
+    border: 0
+
+.infosaude--programacao--item--title
+    background: rgba(27, 61, 104, 0.8)
+    color: #fff
+    font-family: $font-family
+    font-weight: 700
+    text-align: center
+    border: 0
+
+.infosaude--programacao--item--time
+    @extend .infosaude--programacao--item--title
+    background: rgba(27, 61, 104, 0.7)
+
+.infosaude--programacao--item--author
+    display: block
+    font-style: italic
+
+$vw-context-enabled: false
+
+@media #{$media-query-medium}
+
+    .infosaude
+        padding: get-vw(60px) get-vw(20px)
+
+    .infosaude--title
+        padding: get-vw(5px) get-vw(10px)
+        margin: 0 0 get-vw(30px)
+        box-shadow: get-vw(3px) get-vw(3px) get-vw(0px) #1f385f
+        font-size: get-vw(20px)
+
+    .infosaude--description
+        font-size: get-vw(14px)
+
+
+@media #{$media-query-large}
+
+    .infosaude
+        background: url(../images/infosaude1-2.jpg) no-repeat
+        background-position: bottom center
+        background-size: cover

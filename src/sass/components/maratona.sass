@@ -60,37 +60,37 @@ $vw-context-enabled: true
 .about-maratona-projetos--subtitle
     font-weight: 900
     text-transform: uppercase
-    font-size: 18px
-    margin-bottom: 10px
+    font-size: get-vw(18px)
+    margin-bottom: get-vw(10px)
     display: block
 
 .about-maratona-projetos--divisor
     text-align: center
 
 .about-maratona-projetos--card
-    box-shadow: 3px 3px 0 #344163
+    box-shadow: get-vw(3px) get-vw(3px) 0 #344163
     background: #556BA3
-    padding: 20px 30px
-    margin: 0 0 20px
-    font-size: 14px
+    padding: get-vw(20px) get-vw(30px)
+    margin: 0 0 get-vw(20px)
+    font-size: get-vw(14px)
     display: block
 
     &__2
         background: #483e78
-        box-shadow: 3px 3px 0 #2f294e
+        box-shadow: get-vw(3px) get-vw(3px) 0 #2f294e
 
     &__3
         background: #642363
-        box-shadow: 3px 3px 0 #4e1d4d
+        box-shadow: get-vw(3px) get-vw(3px) 0 #4e1d4d
 
 .about-maratona-projetos--card-title
     font-weight: 900
     text-transform: uppercase
-    font-size: 18px
+    font-size: get-vw(18px)
 
 .about-maratona-projetos--list
     padding: 0px
-    margin: 10px
+    margin: get-vw(10px)
 
 $vw-context-enabled: false
 
@@ -125,6 +125,28 @@ $vw-context-enabled: false
             line-height: get-vw(24px)
             margin-right: get-vw(4px)
 
+
+    .about-maratona-projetos--subtitle
+        font-size: get-vw(18px)
+        margin-bottom: get-vw(10px)
+
+    .about-maratona-projetos--card
+        box-shadow: get-vw(3px) get-vw(3px) 0 #344163
+        padding: get-vw(20px) get-vw(30px)
+        margin: 0 0 get-vw(20px)
+        font-size: get-vw(14px)
+
+        &__2
+            box-shadow: get-vw(3px) get-vw(3px) 0 #2f294e
+
+        &__3
+            box-shadow: get-vw(3px) get-vw(3px) 0 #4e1d4d
+
+    .about-maratona-projetos--card-title
+        font-size: get-vw(18px)
+
+    .about-maratona-projetos--list
+        margin: get-vw(10px)
 
 @media #{$media-query-large}
 
