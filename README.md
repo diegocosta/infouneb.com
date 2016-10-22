@@ -25,7 +25,7 @@ Feito isso, basta abrir seu terminal (ou prompt de comando) e rodar os seguintes
 
 1. Instalar a [RubyGem](https://pt.wikipedia.org/wiki/RubyGems) SASS: ``gem install sass``  
 1. Instalar as depêndencias do Node: ``npm install -g bower gulp-cli``  
-1. Clonar este projeto.  
+1. Clonar este projeto (Se você está aqui provavelmente sabe como fazer isso).  
 1. Navegar até a pasta clonada (pelo terminal) e instalar as depêndencias do projeto: ``npm install``  
 1. Rodar o servidor: ``gulp server``  
 1. Abrir o endereço: ``http:\\localhost:8080`` (ou outro endereço indicado no passo anterior) em seu navegador favorito.  
