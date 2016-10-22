@@ -19,6 +19,17 @@ Site oficial da 9ª edição da Semana de Tecnologia da Informação da Universi
 ## Design
 Todo design foi elaborado por [Gui Rodrigues](http://www.guirodrigues.com.br/ "Melhor Designer Ever!").
 
+## Ambiente de Desenvolvimento
+Para usar esse projeto você vai precisar instalar primeiramente o [Ruby](https://www.ruby-lang.org/pt/documentation/installation/) e [Node](https://nodejs.org/en/download/) (Caso ainda não tenha).  
+Feito isso, basta abrir seu terminal (ou prompt de comando) e rodar os seguintes comandos:  
+
+1. Instalar a [RubyGem](https://pt.wikipedia.org/wiki/RubyGems) SASS: ``gem install sass``  
+1. Instalar as depêndencias do Node: ``npm install -g bower gulp-cli``  
+1. Clonar este projeto.  
+1. Navegar até a pasta clonada (pelo terminal) e instalar as depêndencias do projeto: ``npm install``  
+1. Rodar o servidor: ``gulp server``  
+1. Abrir o endereço: ``http:\\localhost:8080`` (ou outro endereço indicado no passo anterior) em seu navegador favorito.  
+
 ## Licença
 Caso tenha gostado, [pode usar](LICENSE.md) :) só mantenha nossas referências no rodapé.  
 E me informe, ficaria feliz em vê-lo por aí.
